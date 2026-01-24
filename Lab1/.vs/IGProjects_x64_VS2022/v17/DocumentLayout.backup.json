@@ -3,8 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RGBCube.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\RGBCube.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\Cube.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\Cube.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Escenas\\Scene3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Escenas\\Scene3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RGBCube.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\RGBCube.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\Cube.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\Cube.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RGBRectangle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\RGBRectangle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RGBRectangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\RGBRectangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RGBTriangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\RGBTriangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RGBTriangle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\RGBTriangle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\IG1App.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\IG1App.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Escenas\\Scene3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Escenas\\Scene3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RegularPoligon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\RegularPoligon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\SingleColorEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\SingleColorEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Escenas\\Scene2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Escenas\\Scene2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Escenas\\Scene1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Escenas\\Scene1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RegularPoligon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -15,32 +79,12 @@
       "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\IG1App.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\IG1App.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\IG1App.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RGBRectangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\RGBRectangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Escenas\\Scene2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Escenas\\Scene2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RGBRectangle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\RGBRectangle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RGBTriangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\RGBTriangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -55,32 +99,12 @@
       "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Escenas\\Scene1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\SingleColorEntity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\SingleColorEntity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Escenas\\Scene1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Escenas\\Scene1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RegularPoligon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\RegularPoligon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Escenas\\Scene2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Escenas\\Scene2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\SingleColorEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\SingleColorEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,7 +114,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 256,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,33 +122,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
+              "Title": "RGBCube.cpp",
+              "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RGBCube.cpp",
+              "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\RGBCube.cpp",
+              "ToolTip": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RGBCube.cpp",
+              "RelativeToolTip": "IG1App\\EntidadesLabs\\RGBCube.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-24T22:31:03.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cube.cpp",
+              "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\Cube.cpp",
+              "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\Cube.cpp",
+              "ToolTip": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\Cube.cpp",
+              "RelativeToolTip": "IG1App\\EntidadesLabs\\Cube.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-24T22:05:00.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Scene3.cpp",
+              "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Escenas\\Scene3.cpp",
+              "RelativeDocumentMoniker": "IG1App\\Escenas\\Scene3.cpp",
+              "ToolTip": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Escenas\\Scene3.cpp",
+              "RelativeToolTip": "IG1App\\Escenas\\Scene3.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-24T21:27:57.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "RGBRectangle.cpp",
               "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RGBRectangle.cpp",
               "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\RGBRectangle.cpp",
               "ToolTip": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RGBRectangle.cpp",
               "RelativeToolTip": "IG1App\\EntidadesLabs\\RGBRectangle.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-24T17:18:18.857Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "Scene2.cpp",
               "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Escenas\\Scene2.cpp",
               "RelativeDocumentMoniker": "IG1App\\Escenas\\Scene2.cpp",
               "ToolTip": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Escenas\\Scene2.cpp",
               "RelativeToolTip": "IG1App\\Escenas\\Scene2.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-24T17:00:56.758Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 23,
               "Title": "Scene1.cpp",
               "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Escenas\\Scene1.cpp",
               "RelativeDocumentMoniker": "IG1App\\Escenas\\Scene1.cpp",
@@ -137,20 +200,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 0,
               "Title": "Mesh.cpp",
               "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Mesh.cpp",
               "RelativeDocumentMoniker": "IG1App\\Mesh.cpp",
               "ToolTip": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Mesh.cpp",
               "RelativeToolTip": "IG1App\\Mesh.cpp",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAAAIkAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAPUAAAAAAAAAAAAAwBcBAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-24T16:55:43.308Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 22,
               "Title": "Entity.cpp",
               "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Entity.cpp",
               "RelativeDocumentMoniker": "IG1App\\Entity.cpp",
@@ -163,20 +226,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "RGBTriangle.cpp",
               "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RGBTriangle.cpp",
               "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\RGBTriangle.cpp",
               "ToolTip": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RGBTriangle.cpp",
               "RelativeToolTip": "IG1App\\EntidadesLabs\\RGBTriangle.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-24T16:25:34.677Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 17,
               "Title": "RegularPoligon.cpp",
               "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RegularPoligon.cpp",
               "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\RegularPoligon.cpp",
@@ -189,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 19,
               "Title": "Scene.cpp",
               "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Scene.cpp",
               "RelativeDocumentMoniker": "IG1App\\Scene.cpp",
@@ -202,20 +265,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "IG1App.cpp",
               "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\IG1App.cpp",
               "RelativeDocumentMoniker": "IG1App\\IG1App.cpp",
               "ToolTip": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\IG1App.cpp",
               "RelativeToolTip": "IG1App\\IG1App.cpp",
-              "ViewState": "AgIAABUAAAAAAAAAAAAcwDMAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-23T15:32:33.142Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 24,
               "Title": "SingleColorEntity.cpp",
               "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\SingleColorEntity.cpp",
               "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\SingleColorEntity.cpp",
@@ -234,7 +297,46 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RGBCube.h",
+              "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RGBCube.h",
+              "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\RGBCube.h",
+              "ToolTip": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RGBCube.h",
+              "RelativeToolTip": "IG1App\\EntidadesLabs\\RGBCube.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-24T22:29:54.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Cube.h",
+              "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\Cube.h",
+              "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\Cube.h",
+              "ToolTip": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\Cube.h",
+              "RelativeToolTip": "IG1App\\EntidadesLabs\\Cube.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-24T22:04:00.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Scene3.h",
+              "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Escenas\\Scene3.h",
+              "RelativeDocumentMoniker": "IG1App\\Escenas\\Scene3.h",
+              "ToolTip": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Escenas\\Scene3.h",
+              "RelativeToolTip": "IG1App\\Escenas\\Scene3.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-24T21:27:52.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "IG1App.h",
               "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\IG1App.h",
               "RelativeDocumentMoniker": "IG1App\\IG1App.h",
@@ -247,20 +349,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "RGBRectangle.h",
               "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RGBRectangle.h",
               "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\RGBRectangle.h",
               "ToolTip": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RGBRectangle.h",
               "RelativeToolTip": "IG1App\\EntidadesLabs\\RGBRectangle.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-01-24T17:17:31.165Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "Scene2.h",
               "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Escenas\\Scene2.h",
               "RelativeDocumentMoniker": "IG1App\\Escenas\\Scene2.h",
@@ -273,7 +375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "RGBTriangle.h",
               "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RGBTriangle.h",
               "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\RGBTriangle.h",
@@ -286,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 12,
               "Title": "RegularPoligon.h",
               "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\RegularPoligon.h",
               "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\RegularPoligon.h",
@@ -312,7 +414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 21,
               "Title": "Scene.h",
               "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Scene.h",
               "RelativeDocumentMoniker": "IG1App\\Scene.h",
@@ -325,20 +427,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "Mesh.h",
               "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Mesh.h",
               "RelativeDocumentMoniker": "IG1App\\Mesh.h",
               "ToolTip": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Mesh.h",
               "RelativeToolTip": "IG1App\\Mesh.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-01-23T15:01:40.842Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 20,
               "Title": "Entity.h",
               "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Entity.h",
               "RelativeDocumentMoniker": "IG1App\\Entity.h",
@@ -351,13 +453,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 13,
               "Title": "SingleColorEntity.h",
               "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\SingleColorEntity.h",
               "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\SingleColorEntity.h",
               "ToolTip": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\EntidadesLabs\\SingleColorEntity.h",
               "RelativeToolTip": "IG1App\\EntidadesLabs\\SingleColorEntity.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-01-23T15:19:29.351Z",
               "EditorCaption": ""

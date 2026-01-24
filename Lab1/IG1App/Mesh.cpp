@@ -137,7 +137,7 @@ Mesh* Mesh::generateRBGTriangle(GLdouble r)
 {
 	Mesh* mesh = Mesh::generateRegularPolygon(3, r);
 
-	// Ponemos bien la primitiva (Regular poligon usa LINE_LOOP)
+	// Ponemos bien la primitiva
 	mesh->mPrimitive = GL_TRIANGLES;
 
 	mesh->vColors.reserve(mesh->mNumVertices);
@@ -177,6 +177,108 @@ Mesh* Mesh::generateRGBRectangle(GLdouble w, GLdouble h)
 	mesh->vColors.emplace_back(0.0, 1.0, 0.0, 1.0);
 	mesh->vColors.emplace_back(0.0, 1.0, 0.0, 1.0);
 	mesh->vColors.emplace_back(0.0, 0.0, 1.0, 1.0);
+
+	return mesh;
+}
+
+Mesh* Mesh::generateCube(GLdouble length)
+{
+	Mesh* mesh = new Mesh();
+
+	mesh->mPrimitive = GL_TRIANGLES;
+	mesh->mNumVertices = 36;
+	mesh->vVertices.reserve(mesh->mNumVertices);
+
+	//	6 - - - - - - - - - 5
+	//	 | \             | \
+	//	 |   - - - - - - - - -
+	//	 |   |0          |   |1
+	//	 |   |           |   |
+	//	 |   |           |   |
+	//	 |   |           |   |
+	//	 |   |           |4  |
+	//	7 - -| - - - - - -   |
+	//	   \ |2            \ |3
+	//	     - - - - - - - - -
+	//
+	//		 y |
+	//		   |
+	//	   z - -
+	//			\ x
+
+	// Cara +X
+	mesh->vVertices.emplace_back(length / 2, length / 2, length / 2); // 0
+	mesh->vVertices.emplace_back(length / 2, -length / 2, -length / 2); // 3
+	mesh->vVertices.emplace_back(length / 2, -length / 2, length / 2); // 2
+
+	mesh->vVertices.emplace_back(length / 2, length / 2, length / 2); // 0
+	mesh->vVertices.emplace_back(length / 2, length / 2, -length / 2); // 1
+	mesh->vVertices.emplace_back(length / 2, -length / 2, -length / 2); // 3
+
+	// Cara +Z
+	mesh->vVertices.emplace_back(-length / 2, length / 2, length / 2); // 6
+	mesh->vVertices.emplace_back(length / 2, -length / 2, length / 2); // 2
+	mesh->vVertices.emplace_back(-length / 2, -length / 2, length / 2); // 7
+
+	mesh->vVertices.emplace_back(-length / 2, length / 2, length / 2); // 6
+	mesh->vVertices.emplace_back(length / 2, length / 2, length / 2); // 0
+	mesh->vVertices.emplace_back(length / 2, -length / 2, length / 2); // 2
+
+	// Cara -X
+	mesh->vVertices.emplace_back(-length / 2, length / 2, -length / 2); // 5
+	mesh->vVertices.emplace_back(-length / 2, -length / 2, length / 2); // 7
+	mesh->vVertices.emplace_back(-length / 2, -length / 2, -length / 2); // 4
+
+	mesh->vVertices.emplace_back(-length / 2, length / 2, -length / 2); // 5
+	mesh->vVertices.emplace_back(-length / 2, length / 2, length / 2); // 6
+	mesh->vVertices.emplace_back(-length / 2, -length / 2, length / 2); // 7
+
+	// Cara -Z
+	mesh->vVertices.emplace_back(length / 2, length / 2, -length / 2); // 1
+	mesh->vVertices.emplace_back(-length / 2, -length / 2, -length / 2); // 4
+	mesh->vVertices.emplace_back(length / 2, -length / 2, -length / 2); // 3
+
+	mesh->vVertices.emplace_back(length / 2, length / 2, -length / 2); // 1
+	mesh->vVertices.emplace_back(-length / 2, length / 2, -length / 2); // 5
+	mesh->vVertices.emplace_back(-length / 2, -length / 2, -length / 2); // 4
+
+	// Cara +Y
+	mesh->vVertices.emplace_back(-length / 2, length / 2, length / 2); // 6
+	mesh->vVertices.emplace_back(length / 2, length / 2, -length / 2); // 1
+	mesh->vVertices.emplace_back(length / 2, length / 2, length / 2); // 0
+
+	mesh->vVertices.emplace_back(-length / 2, length / 2, length / 2); // 6
+	mesh->vVertices.emplace_back(-length / 2, length / 2, -length / 2); // 5
+	mesh->vVertices.emplace_back(length / 2, length / 2, -length / 2); // 1
+
+	// Cara -Y
+	mesh->vVertices.emplace_back(length / 2, -length / 2, -length / 2); // 3
+	mesh->vVertices.emplace_back(-length / 2, -length / 2, length / 2); // 7
+	mesh->vVertices.emplace_back(length / 2, -length / 2, length / 2); // 2
+
+	mesh->vVertices.emplace_back(length / 2, -length / 2, -length / 2); // 3
+	mesh->vVertices.emplace_back(-length / 2, -length / 2, -length / 2); // 4
+	mesh->vVertices.emplace_back(-length / 2, -length / 2, length / 2); // 7
+
+	return mesh;
+}
+
+Mesh* Mesh::generateRGBCubeTriangles(GLdouble length)
+{
+	Mesh* mesh = generateCube(length);
+
+	mesh->vColors.reserve(mesh->mNumVertices);
+
+	for (int i = 0; i < mesh->mNumVertices; ++i) {
+		if (i / 6 == 0 || i / 6 == 2) {
+			mesh->vColors.emplace_back(0.0, 1.0, 0.0, 1.0);
+		}
+		else if (i / 6 == 4 || i / 6 == 5) {
+			mesh->vColors.emplace_back(0.0, 0.0, 1.0, 1.0);
+		}
+		else 
+			mesh->vColors.emplace_back(1.0, 0.0, 0.0, 1.0);
+	}
 
 	return mesh;
 }
