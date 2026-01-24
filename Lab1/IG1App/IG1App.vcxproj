@@ -74,8 +74,14 @@
     <ClInclude Include="IG1App.h" />
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Image.h" />
+    <ClInclude Include="EntidadesLabs\RegularPoligon.h" />
+    <ClInclude Include="EntidadesLabs\RGBTriangle.h" />
+    <ClInclude Include="EntidadesLabs\RGBRectangle.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="Escenas\Scene1.h" />
+    <ClInclude Include="Escenas\Scene2.h" />
     <ClInclude Include="Shader.h" />
+    <ClInclude Include="EntidadesLabs\SingleColorEntity.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="Viewport.h" />
   </ItemGroup>
@@ -86,8 +92,14 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="Image.cpp" />
+    <ClCompile Include="EntidadesLabs\RegularPoligon.cpp" />
+    <ClCompile Include="EntidadesLabs\RGBTriangle.cpp" />
+    <ClCompile Include="EntidadesLabs\RGBRectangle.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Escenas\Scene1.cpp" />
+    <ClCompile Include="Escenas\Scene2.cpp" />
     <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="EntidadesLabs\SingleColorEntity.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="Viewport.cpp" />
   </ItemGroup>

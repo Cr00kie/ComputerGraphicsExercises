@@ -20,6 +20,9 @@ public:
 
 	virtual void render(const glm::mat4& modelViewMat) const = 0; // abstract method
 
+	// Modifica la ModelMat
+	virtual void update() {}
+
 	// modeling matrix
 	glm::mat4 const& modelMat() const { return mModelMat; };
 	void setModelMat(glm::mat4 const& aMat) { mModelMat = aMat; };

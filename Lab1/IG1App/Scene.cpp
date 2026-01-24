@@ -52,7 +52,8 @@ void
 Scene::setGL()
 {
 	// OpenGL basic setting
-	glClearColor(1.0, 1.0, 1.0, 1.0); // background color (alpha=1 -> opaque)
+	// Cambio color de fondo (APARTADO 1)
+	glClearColor(0.6, 0.7, 0.8, 1.0); // background color (alpha=1 -> opaque)
 	glEnable(GL_DEPTH_TEST);          // enable Depth test
 }
 void
@@ -69,4 +70,9 @@ Scene::render(Camera const& cam) const
 
 	for (Abs_Entity* el : gObjects)
 		el->render(cam.viewMat());
+}
+
+void Scene::update() {
+	for (Abs_Entity* el : gObjects)
+		el->update();
 }

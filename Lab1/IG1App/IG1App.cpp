@@ -1,6 +1,8 @@
 #include "IG1App.h"
 
 #include <iostream>
+#include "Escenas/Scene1.h"
+#include "Escenas/Scene2.h"
 
 using namespace std;
 
@@ -32,14 +34,27 @@ IG1App::run() // enters the main event processing loop
 
 	// IG1App main loop
 	while (!glfwWindowShouldClose(mWindow)) {
+
 		// Redisplay the window if needed
 		if (mNeedsRedisplay) {
 			display();
 			mNeedsRedisplay = false;
 		}
 
-		// Stop and wait for new events
-		glfwWaitEvents();
+		if (mUpdateEnabled) {
+			if (glfwGetTime() > mNextUpdate) {
+				mScenes[mCurrentScene]->update();
+				mNextUpdate = glfwGetTime() + FRAME_DURATION;
+
+				mNeedsRedisplay = true;
+			}
+
+			glfwWaitEventsTimeout(mNextUpdate - glfwGetTime());
+		}
+		else {
+			// Stop and wait for new events
+			glfwWaitEvents();
+		}
 	}
 
 	destroy();
@@ -56,9 +71,16 @@ IG1App::init()
 	mViewPort = new Viewport(mWinW, mWinH);
 	mCamera = new Camera(mViewPort);
 	mScenes.push_back(new Scene);
+	mScenes.push_back(new Scene1);
+	mScenes.push_back(new Scene2);
 
 	mCamera->set2D();
-	mScenes[0]->init();
+	for(Scene* s : mScenes)
+		s->init();
+
+	// Escena inicial (para testear)
+	mCurrentScene = 0;
+
 	mScenes[mCurrentScene]->load();
 }
 
@@ -162,6 +184,10 @@ IG1App::key(unsigned int key)
 			break;
 		case 'o':
 			mCamera->set2D();
+			break;
+		case 'u':
+			mUpdateEnabled = !mUpdateEnabled;
+			cout << "Update: " << mUpdateEnabled << '\n';
 			break;
 		default:
 			if (key >= '0' && key <= '9') {
