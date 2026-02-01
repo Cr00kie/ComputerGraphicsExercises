@@ -9,18 +9,21 @@ RGBTriangle::RGBTriangle(GLdouble r)
 
 void RGBTriangle::update()
 {
-	constexpr float rotateSpeed = glm::radians(-0.05f);
+	constexpr float spinSpeed = glm::radians(-0.2f);
+	constexpr float orbitSpeed = glm::radians(0.5f);
 	glm::mat4 mat = modelMat();
 
+	// Ponemos la matriz en el (0,0,0)
+	mat[3] = glm::vec4(0.0f, 0.0f, 0.0f, 1.0f);
 	// Rotamos mat sobre si mismo
-	mat = glm::rotate(modelMat(), rotateSpeed, { 0,0,1 });
+	mat = glm::rotate(mat, spinSpeed, { 0,0,1 });
 
-	// Rotamos mat sobre un pivote
-	//									/-- Hay que multiplicar por dos, lo he sacado probando
-	glm::vec3 pos = { glm::sqrt(10000 * 2) * 2, 0, 0 };
-	mat = glm::translate(mat, -pos);
-	mat = glm::rotate(mat, rotateSpeed, { 0,0,1 });
-	mat = glm::translate(mat, pos);
+	// Aplicamos la orbita al rededor del circulo
+	mat = glm::translate(mat, { glm::cos(m_fOrbitAngle) * m_fOrbitRad, 
+								glm::sin(m_fOrbitAngle) * m_fOrbitRad, 
+								0 });
+	m_fOrbitAngle += orbitSpeed;
+	std::cout << "Angle: " << m_fOrbitAngle << '\n';
 
 	// Actualizamos mat
 	setModelMat(mat);
