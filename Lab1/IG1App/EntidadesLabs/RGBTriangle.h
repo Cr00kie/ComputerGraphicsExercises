@@ -7,6 +7,7 @@ class RGBTriangle :
 private:
     float m_fOrbitAngle = 0;
     float m_fOrbitRad = glm::sqrt(10000 * 2);
+    float m_fSpinAngle = 0;
 public:
     RGBTriangle(GLdouble r);
     void update() override;

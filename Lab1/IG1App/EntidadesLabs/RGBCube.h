@@ -19,7 +19,7 @@ private:
     };
 
     float m_fCurrRotation = 0;
-    float m_fRotationSpeed = glm::radians(2.f);
+    float m_fRotationSpeed = glm::radians(0.2f);
     Axes m_CurrentAxe = Axes::X;
     glm::vec3 m_Pivot;
     GLdouble m_dHalfLength;
