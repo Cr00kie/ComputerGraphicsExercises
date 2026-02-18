@@ -10,13 +10,6 @@
 
 #include <vector>
 
-enum TextureNames
-{
-	BALDOSA_C,
-
-	N_TEXTURES
-};
-
 
 class Scene
 {
