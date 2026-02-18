@@ -2,8 +2,14 @@
 
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
+#include <array>
 
 using namespace glm;
+
+// TODO: no s'e si esto se hace as'i help
+const static std::array<const std::string, N_TEXTURES> textureFilePaths = {
+	"../assets/images/baldosaC.png",
+};
 
 void
 Scene::init()
@@ -13,6 +19,11 @@ Scene::init()
 	// allocate memory and load resources
 	// Lights
 	// Textures
+	for (const std::string& path : textureFilePaths)
+	{
+		Texture* tex = new Texture();
+		tex->load(path);
+	}
 
 	// Graphics objects (entities) of the scene
 	gObjects.push_back(new RGBAxes(400.0));
@@ -31,7 +42,11 @@ Scene::destroy()
 	for (Abs_Entity* el : gObjects)
 		delete el;
 
+	for (Texture* tex : gTextures)
+		delete tex;
+
 	gObjects.clear();
+	gTextures.clear();
 }
 
 void

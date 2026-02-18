@@ -72,6 +72,8 @@
     <ClInclude Include="Camera.h" />
     <ClInclude Include="EntidadesLabs\Cube.h" />
     <ClInclude Include="Entity.h" />
+    <ClInclude Include="EntidadesLabs\Ground.h" />
+    <ClInclude Include="EntidadesLabs\EntityWithTexture.h" />
     <ClInclude Include="IG1App.h" />
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Image.h" />
@@ -83,6 +85,7 @@
     <ClInclude Include="Escenas\Scene1.h" />
     <ClInclude Include="Escenas\Scene2.h" />
     <ClInclude Include="Escenas\Scene3.h" />
+    <ClInclude Include="Escenas\Scene4.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="EntidadesLabs\SingleColorEntity.h" />
     <ClInclude Include="Texture.h" />
@@ -92,6 +95,8 @@
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="EntidadesLabs\Cube.cpp" />
     <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="EntidadesLabs\Ground.cpp" />
+    <ClCompile Include="EntidadesLabs\EntityWithTexture.cpp" />
     <ClCompile Include="IG1App.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Mesh.cpp" />
@@ -104,6 +109,7 @@
     <ClCompile Include="Escenas\Scene1.cpp" />
     <ClCompile Include="Escenas\Scene2.cpp" />
     <ClCompile Include="Escenas\Scene3.cpp" />
+    <ClCompile Include="Escenas\Scene4.cpp" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="EntidadesLabs\SingleColorEntity.cpp" />
     <ClCompile Include="Texture.cpp" />

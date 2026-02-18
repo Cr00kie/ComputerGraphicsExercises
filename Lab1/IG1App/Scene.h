@@ -6,8 +6,17 @@
 
 #include "Camera.h"
 #include "Entity.h"
+#include "Texture.h"
 
 #include <vector>
+
+enum TextureNames
+{
+	BALDOSA_C,
+
+	N_TEXTURES
+};
+
 
 class Scene
 {
@@ -34,6 +43,8 @@ protected:
 	void resetGL();
 
 	std::vector<Abs_Entity*> gObjects; // Entities (graphic objects) of the scene
+	std::vector<Texture*> gTextures; // Textures in the scene
+	
 };
 
 #endif //_H_Scene_H_

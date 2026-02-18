@@ -10,6 +10,7 @@ Mesh::Mesh()
  : mVAO(NONE)
  , mVBO(NONE)
  , mCBO(NONE)
+ , mTCO(NONE)
 {
 }
 
@@ -50,6 +51,21 @@ Mesh::load()
 			glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, sizeof(vec4), nullptr);
 			glEnableVertexAttribArray(1);
 		}
+
+		// Si hay coordenadas de texturas, las cargamos en la GPU
+		if (vTexCoords.size() > 0)
+		{
+			glGenBuffers(1, &mTCO);
+			glBindBuffer(GL_ARRAY_BUFFER, mTCO);
+
+			glBufferData(GL_ARRAY_BUFFER,
+						vTexCoords.size() * sizeof(vec2),
+						vTexCoords.data(), GL_STATIC_DRAW);
+
+			glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE,
+								sizeof(vec2), nullptr);
+			glEnableVertexAttribArray(2);
+		}
 	}
 }
 
@@ -65,6 +81,12 @@ Mesh::unload()
 		if (mCBO != NONE) {
 			glDeleteBuffers(1, &mCBO);
 			mCBO = NONE;
+		}
+
+		if (mTCO != NONE)
+		{
+			glDeleteBuffers(1, &mTCO);
+			mTCO = NONE;
 		}
 	}
 }
@@ -279,6 +301,20 @@ Mesh* Mesh::generateRGBCubeTriangles(GLdouble length)
 		else 
 			mesh->vColors.emplace_back(1.0, 0.0, 0.0, 1.0);
 	}
+
+	return mesh;
+}
+
+Mesh* Mesh::generateRectangleTexCor(GLdouble w, GLdouble h)
+{
+	Mesh* mesh = generateRectangle(w, h);
+
+	mesh->vTexCoords.reserve(mesh->mNumVertices);
+
+	mesh->vTexCoords.emplace_back(0, 1);
+	mesh->vTexCoords.emplace_back(0, 0);
+	mesh->vTexCoords.emplace_back(1, 1);
+	mesh->vTexCoords.emplace_back(1, 0);
 
 	return mesh;
 }
