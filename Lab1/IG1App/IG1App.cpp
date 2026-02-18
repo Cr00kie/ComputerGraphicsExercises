@@ -187,9 +187,11 @@ IG1App::key(unsigned int key)
 		case 'o':
 			mCamera->set2D();
 			break;
-		case 'u':
+		case 'U':
 			mUpdateEnabled = !mUpdateEnabled;
-			cout << "Update: " << mUpdateEnabled << '\n';
+			break;
+		case 'u':
+			mScenes[mCurrentScene]->update();
 			break;
 		default:
 			if (key >= '0' && key <= '9') {

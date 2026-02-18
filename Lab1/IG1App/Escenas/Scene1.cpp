@@ -3,9 +3,8 @@
 
 void Scene1::init()
 {
-	setGL();
+	Scene::init();
 
-	gObjects.push_back(new RGBAxes(400.0));
 	// Hexagono Magenta
 	gObjects.push_back(new RegularPoligon(6, 300, {1,0,1,1}));
 	// Circunferencia Amarilla

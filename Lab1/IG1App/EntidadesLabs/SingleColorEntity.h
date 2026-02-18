@@ -1,4 +1,6 @@
-#pragma once
+#ifndef _H_SingleColorEntity_H_
+#define _H_SingleColorEntity_H_
+
 #include "../Entity.h"
 class SingleColorEntity :
     public Abs_Entity
@@ -12,3 +14,4 @@ private:
 
 };
 
+#endif	

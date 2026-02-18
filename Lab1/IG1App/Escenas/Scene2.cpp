@@ -7,14 +7,13 @@
 
 void Scene2::init()
 {
-	setGL();
+	Scene::init();
 
-	gObjects.push_back(new RGBAxes(400.0));
+	constexpr GLdouble rectangleLength = 200;
+	constexpr GLdouble halfRectLength = rectangleLength / 2;
+	gObjects.push_back(new RGBRectangle(rectangleLength, rectangleLength));
 
-
-	gObjects.push_back(new RGBRectangle(200, 200));
-
-	const GLdouble rad = glm::sqrt(10000 * 2);
+	const GLdouble rad = glm::sqrt(halfRectLength * halfRectLength * 2);
 	gObjects.push_back(new RegularPoligon(40, rad, { 1.0, 0.0, 1.0, 1.0 }));
 
 	RGBTriangle* triangle = new RGBTriangle(100);

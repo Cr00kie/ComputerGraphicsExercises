@@ -1,4 +1,6 @@
-#pragma once
+#ifndef _H_RGBTriangle_H_
+#define _H_RGBTriangle_H_
+
 #include "../Entity.h"
 
 class RGBTriangle :
@@ -13,3 +15,4 @@ public:
     void update() override;
 };
 
+#endif

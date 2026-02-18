@@ -1,4 +1,6 @@
-#pragma once
+#ifndef _H_RGBCube_H_
+#define _H_RGBCube_H_
+
 #include "../Entity.h"
 
 
@@ -24,4 +26,6 @@ private:
     glm::vec3 m_Pivot;
     GLdouble m_dHalfLength;
 };
+
+#endif 
 
