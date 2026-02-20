@@ -7,7 +7,7 @@ class EntityWithTexture :
     public Abs_Entity
 {
 public:
-    EntityWithTexture();
+    EntityWithTexture(const std::string& imageName);
     inline void setTexture(Texture* t) { mTexture = t; }
     inline void setModulate(bool modulate) { mModulate = modulate; }
 protected:

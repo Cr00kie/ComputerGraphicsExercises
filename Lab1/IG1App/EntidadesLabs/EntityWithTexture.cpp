@@ -1,9 +1,11 @@
 #include "EntityWithTexture.h"
+#include "../Scene.h"
 
-EntityWithTexture::EntityWithTexture()
+EntityWithTexture::EntityWithTexture(const std::string& imageName)
 {
 	// Cogemos shader que usa texturas
 	mShader = Shader::get("texture");
+	mTexture = Scene::getTexture(imageName);
 }
 
 void EntityWithTexture::render(const glm::mat4& modelViewMat) const

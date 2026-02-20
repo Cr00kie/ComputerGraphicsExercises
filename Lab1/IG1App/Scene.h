@@ -9,6 +9,8 @@
 #include "Texture.h"
 
 #include <vector>
+#include <unordered_map>
+#include <memory>
 
 
 class Scene
@@ -26,6 +28,8 @@ public:
 
 	virtual void update();
 
+	static Texture* getTexture(const std::string& name, GLubyte alpha = 255);
+
 	// load or unload scene data into the GPU
 	void load();
 	void unload();
@@ -36,8 +40,7 @@ protected:
 	void resetGL();
 
 	std::vector<Abs_Entity*> gObjects; // Entities (graphic objects) of the scene
-	std::vector<Texture*> gTextures; // Textures in the scene
-	
+	static inline std::unordered_map<std::string, std::unique_ptr<Texture>> gTextures; // Textures in the scene
 };
 
 #endif //_H_Scene_H_

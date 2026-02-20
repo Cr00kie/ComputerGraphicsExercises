@@ -1,14 +1,66 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\",
+  "WorkspaceRootPath": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Escenas\\Scene4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\Escenas\\Scene4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Escenas\\Scene4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Escenas\\Scene4.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\BoxOutline.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\BoxOutline.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\BoxOutline.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\BoxOutline.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\EntityWithTexture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\EntityWithTexture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\EntityWithTexture.h||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\EntityWithTexture.h||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\RGBRectangle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\RGBRectangle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\TextureManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\TextureManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\Ground.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\Ground.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\Ground.h||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\Ground.h||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\Escenas\\Scene4.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Escenas\\Scene4.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\TextureManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\TextureManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,34 +70,199 @@
       "DocumentGroups": [
         {
           "DockedWidth": 216,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RGBRectangle.cpp",
+              "DocumentMoniker": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\RGBRectangle.cpp",
+              "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\RGBRectangle.cpp",
+              "ToolTip": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\RGBRectangle.cpp",
+              "RelativeToolTip": "IG1App\\EntidadesLabs\\RGBRectangle.cpp",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAuwBkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-20T15:23:52.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BoxOutline.h",
+              "DocumentMoniker": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\BoxOutline.h",
+              "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\BoxOutline.h",
+              "ToolTip": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\BoxOutline.h",
+              "RelativeToolTip": "IG1App\\EntidadesLabs\\BoxOutline.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAewA4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-20T14:25:55.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BoxOutline.cpp",
+              "DocumentMoniker": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\BoxOutline.cpp",
+              "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\BoxOutline.cpp",
+              "ToolTip": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\BoxOutline.cpp",
+              "RelativeToolTip": "IG1App\\EntidadesLabs\\BoxOutline.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-20T14:26:00.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EntityWithTexture.h",
+              "DocumentMoniker": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\EntityWithTexture.h",
+              "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\EntityWithTexture.h",
+              "ToolTip": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\EntityWithTexture.h",
+              "RelativeToolTip": "IG1App\\EntidadesLabs\\EntityWithTexture.h",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-20T14:55:16.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EntityWithTexture.cpp",
+              "DocumentMoniker": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\EntityWithTexture.cpp",
+              "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\EntityWithTexture.cpp",
+              "ToolTip": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\EntityWithTexture.cpp",
+              "RelativeToolTip": "IG1App\\EntidadesLabs\\EntityWithTexture.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAewBkAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-20T14:54:48.262Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Scene4.cpp",
-              "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Escenas\\Scene4.cpp",
+              "DocumentMoniker": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\Escenas\\Scene4.cpp",
               "RelativeDocumentMoniker": "IG1App\\Escenas\\Scene4.cpp",
-              "ToolTip": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Escenas\\Scene4.cpp",
-              "RelativeToolTip": "IG1App\\Escenas\\Scene4.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\Escenas\\Scene4.cpp*",
+              "RelativeToolTip": "IG1App\\Escenas\\Scene4.cpp*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-02-18T14:07:28.571Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
+              "Title": "TextureManager.h",
+              "DocumentMoniker": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\TextureManager.h",
+              "RelativeDocumentMoniker": "IG1App\\TextureManager.h",
+              "ToolTip": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\TextureManager.h",
+              "RelativeToolTip": "IG1App\\TextureManager.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-20T14:38:04.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Mesh.cpp",
+              "DocumentMoniker": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\Mesh.cpp",
+              "RelativeDocumentMoniker": "IG1App\\Mesh.cpp",
+              "ToolTip": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\Mesh.cpp",
+              "RelativeToolTip": "IG1App\\Mesh.cpp",
+              "ViewState": "AgIAAE0BAAAAAAAAAAAuwGABAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-20T14:12:09.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TextureManager.cpp",
+              "DocumentMoniker": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\TextureManager.cpp",
+              "RelativeDocumentMoniker": "IG1App\\TextureManager.cpp",
+              "ToolTip": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\TextureManager.cpp",
+              "RelativeToolTip": "IG1App\\TextureManager.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-20T14:38:01.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Ground.h",
+              "DocumentMoniker": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\Ground.h",
+              "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\Ground.h",
+              "ToolTip": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\Ground.h",
+              "RelativeToolTip": "IG1App\\EntidadesLabs\\Ground.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-20T14:55:16.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Scene.h",
+              "DocumentMoniker": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\Scene.h",
+              "RelativeDocumentMoniker": "IG1App\\Scene.h",
+              "ToolTip": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\Scene.h",
+              "RelativeToolTip": "IG1App\\Scene.h",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-20T14:43:55.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Scene.cpp",
+              "DocumentMoniker": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\Scene.cpp",
+              "RelativeDocumentMoniker": "IG1App\\Scene.cpp",
+              "ToolTip": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\Scene.cpp",
+              "RelativeToolTip": "IG1App\\Scene.cpp",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAAAE4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-20T14:44:57.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Mesh.h",
+              "DocumentMoniker": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\Mesh.h",
+              "RelativeDocumentMoniker": "IG1App\\Mesh.h",
+              "ToolTip": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\Mesh.h",
+              "RelativeToolTip": "IG1App\\Mesh.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-20T14:14:08.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Ground.cpp",
+              "DocumentMoniker": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\Ground.cpp",
+              "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\Ground.cpp",
+              "ToolTip": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\Ground.cpp",
+              "RelativeToolTip": "IG1App\\EntidadesLabs\\Ground.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvw4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-20T14:13:28.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Scene4.h",
-              "DocumentMoniker": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Escenas\\Scene4.h",
+              "DocumentMoniker": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\Escenas\\Scene4.h",
               "RelativeDocumentMoniker": "IG1App\\Escenas\\Scene4.h",
-              "ToolTip": "C:\\Users\\Adrian\\Documents\\ComputerGraphics\\Lab1\\IG1App\\Escenas\\Scene4.h",
+              "ToolTip": "C:\\Users\\telmo\\OneDrive\\Escritorio\\UCM TKB\\Curso 3\\IG1 (Repetici\u00F3n)\\ComputerGraphicsExercises\\Lab1\\IG1App\\Escenas\\Scene4.h",
               "RelativeToolTip": "IG1App\\Escenas\\Scene4.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-02-18T14:07:23.002Z",
               "EditorCaption": ""

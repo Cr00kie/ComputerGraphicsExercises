@@ -69,6 +69,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="EntidadesLabs\BoxOutline.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="EntidadesLabs\Cube.h" />
     <ClInclude Include="Entity.h" />
@@ -92,6 +93,7 @@
     <ClInclude Include="Viewport.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="EntidadesLabs\BoxOutline.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="EntidadesLabs\Cube.cpp" />
     <ClCompile Include="Entity.cpp" />

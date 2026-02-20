@@ -78,6 +78,9 @@
     <ClInclude Include="EntidadesLabs\EntityWithTexture.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="EntidadesLabs\BoxOutline.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Scene.cpp">
@@ -144,6 +147,9 @@
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
     <ClCompile Include="EntidadesLabs\EntityWithTexture.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="EntidadesLabs\BoxOutline.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
   </ItemGroup>

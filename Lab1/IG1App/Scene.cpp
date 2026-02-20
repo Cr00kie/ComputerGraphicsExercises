@@ -32,11 +32,7 @@ Scene::destroy()
 	for (Abs_Entity* el : gObjects)
 		delete el;
 
-	for (Texture* tex : gTextures)
-		delete tex;
-
 	gObjects.clear();
-	gTextures.clear();
 }
 
 void
@@ -80,4 +76,19 @@ Scene::render(Camera const& cam) const
 void Scene::update() {
 	for (Abs_Entity* el : gObjects)
 		el->update();
+}
+
+Texture* Scene::getTexture(const std::string& name, GLubyte alpha)
+{
+	// Check whether the texture is already loaded
+	auto it = gTextures.find(name);
+
+	if (it == gTextures.end()) {
+		auto texture = std::make_unique<Texture>();
+		// Load the texture from file (under the texture root)
+		texture->load("../assets/images/" + name, alpha);
+		it = gTextures.insert({ name, std::move(texture) }).first;
+	}
+
+	return it->second.get();
 }

@@ -8,7 +8,7 @@ class Ground :
     public EntityWithTexture
 {
 public:
-    Ground(GLdouble length);
+    Ground(GLdouble length, const std::string& imageName);
     void render(const glm::mat4& modelViewMat) const override;
 };
 

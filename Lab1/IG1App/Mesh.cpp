@@ -305,16 +305,61 @@ Mesh* Mesh::generateRGBCubeTriangles(GLdouble length)
 	return mesh;
 }
 
-Mesh* Mesh::generateRectangleTexCor(GLdouble w, GLdouble h)
+Mesh* Mesh::generateRectangleTexCor(GLdouble w, GLdouble h, GLuint rw, GLuint rh)
 {
 	Mesh* mesh = generateRectangle(w, h);
 
 	mesh->vTexCoords.reserve(mesh->mNumVertices);
 
-	mesh->vTexCoords.emplace_back(0, 1);
+	mesh->vTexCoords.emplace_back(0, rh);
 	mesh->vTexCoords.emplace_back(0, 0);
+	mesh->vTexCoords.emplace_back(rw, rh);
+	mesh->vTexCoords.emplace_back(rw, 0);
+
+	return mesh;
+}
+
+Mesh* Mesh::generateBoxOutline(GLdouble length)
+{
+	Mesh* mesh = new Mesh();
+
+	mesh->mPrimitive = GL_TRIANGLE_STRIP;
+	mesh->mNumVertices = 10;
+	mesh->vVertices.reserve(mesh->mNumVertices);
+
+	mesh->vVertices.emplace_back(-length / 2, -length / 2, -length / 2); // 0
+	mesh->vVertices.emplace_back(-length / 2, +length / 2, -length / 2); // 1
+	mesh->vVertices.emplace_back(+length / 2, -length / 2, -length / 2); // 2
+	mesh->vVertices.emplace_back(+length / 2, +length / 2, -length / 2); // 3
+
+	mesh->vVertices.emplace_back(+length / 2, -length / 2, +length / 2); // 4
+	mesh->vVertices.emplace_back(+length / 2, +length / 2, +length / 2); // 5
+	mesh->vVertices.emplace_back(-length / 2, -length / 2, +length / 2); // 6
+	mesh->vVertices.emplace_back(-length / 2, +length / 2, +length / 2); // 7
+
+	mesh->vVertices.emplace_back(-length / 2, -length / 2, -length / 2); // 0
+	mesh->vVertices.emplace_back(-length / 2, +length / 2, -length / 2); // 1
+
+	// Textura
+	mesh->vTexCoords.reserve(mesh->mNumVertices);
+
+	for (int i = 0; i < 10; i++)
+	{
+		mesh->vTexCoords.emplace_back(i % 2, 1-(i / 2) % 2);
+	}
+
+	/*mesh->vTexCoords.emplace_back(0, 1);
 	mesh->vTexCoords.emplace_back(1, 1);
+	mesh->vTexCoords.emplace_back(0, 0);
 	mesh->vTexCoords.emplace_back(1, 0);
+
+	mesh->vTexCoords.emplace_back(0, 1);
+	mesh->vTexCoords.emplace_back(1, 1);
+	mesh->vTexCoords.emplace_back(0, 0);
+	mesh->vTexCoords.emplace_back(1, 0);
+
+	mesh->vTexCoords.emplace_back(0, 1);
+	mesh->vTexCoords.emplace_back(1, 1);*/
 
 	return mesh;
 }
