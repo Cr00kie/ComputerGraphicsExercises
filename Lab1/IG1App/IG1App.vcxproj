@@ -89,6 +89,7 @@
     <ClInclude Include="Escenas\Scene4.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="EntidadesLabs\SingleColorEntity.h" />
+    <ClInclude Include="EntidadesLabs\Star3D.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="Viewport.h" />
   </ItemGroup>
@@ -114,6 +115,7 @@
     <ClCompile Include="Escenas\Scene4.cpp" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="EntidadesLabs\SingleColorEntity.cpp" />
+    <ClCompile Include="EntidadesLabs\Star3D.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="Viewport.cpp" />
   </ItemGroup>

@@ -363,3 +363,24 @@ Mesh* Mesh::generateBoxOutline(GLdouble length)
 
 	return mesh;
 }
+
+Mesh* Mesh::generateStar3D(GLdouble re, GLuint np, GLdouble h)
+{
+	Mesh* mesh = new Mesh();
+
+	mesh->mPrimitive = GL_TRIANGLE_FAN;
+	mesh->mNumVertices = np*2+2; // +1 por el centro y +1 para cerrar la estrella
+	mesh->vVertices.reserve(mesh->mNumVertices);
+
+	mesh->vVertices.emplace_back(0, 0, 0);
+	const float angleDelta = glm::radians(360.0f / (np * 2));
+	GLdouble ri = re / 2;
+	for (int i = 0; i < np * 2; i++) {
+		float angle = angleDelta * i;
+		GLdouble r = i % 2 ? ri : re;
+		mesh->vVertices.emplace_back(r * glm::cos(angle), r * glm::sin(angle), h);
+	}
+	mesh->vVertices.push_back(mesh->vVertices[1]);
+
+	return mesh;
+}
