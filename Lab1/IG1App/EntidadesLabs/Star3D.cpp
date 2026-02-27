@@ -22,3 +22,11 @@ void Star3D::render(const glm::mat4& modelViewMat) const
 		mMesh->render();
 	}
 }
+
+void Star3D::update()
+{
+	glm::mat4 rotZ = glm::rotate(modelMat(), glm::radians(rotationZ), glm::vec3(0, 0, 1));
+	glm::mat4 rotY = glm::rotate(glm::mat4(1), glm::radians(rotationY), glm::vec3(0, 1, 0));
+
+	setModelMat(rotY * rotZ);
+}
