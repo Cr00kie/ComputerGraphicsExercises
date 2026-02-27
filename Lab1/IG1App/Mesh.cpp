@@ -384,3 +384,25 @@ Mesh* Mesh::generateStar3D(GLdouble re, GLuint np, GLdouble h)
 
 	return mesh;
 }
+
+Mesh* Mesh::generateStar3DTexCor(GLdouble re, GLuint np, GLdouble h)
+{
+	Mesh* mesh = generateStar3D(re, np, h);
+
+	mesh->vTexCoords.reserve(mesh->mNumVertices);
+
+	mesh->vTexCoords.emplace_back(0.5, 0.5); // Centro de la estrella
+
+	float maxR = 0.5;
+	const float angleDelta = glm::radians(360.0f / (np * 2));
+	GLdouble minR = maxR / 2;
+
+	for (int i = 0; i < np * 2; i++) {
+		float angle = angleDelta * i;
+		GLdouble r = i % 2 ? minR : maxR;
+		mesh->vTexCoords.emplace_back(0.5 + r * glm::cos(angle), 0.5 + r * glm::sin(angle));
+	}
+	mesh->vTexCoords.push_back(mesh->vTexCoords[1]);
+
+	return mesh;
+}

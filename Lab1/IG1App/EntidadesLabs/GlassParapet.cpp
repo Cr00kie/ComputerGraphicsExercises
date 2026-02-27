@@ -1,22 +1,23 @@
-#include "EntityWithTexture.h"
-#include "../Scene.h"
+#include "GlassParapet.h"
 
-EntityWithTexture::EntityWithTexture(const std::string& imageName, GLfloat alpha )
+GlassParapet::GlassParapet(GLdouble length, const std::string& imgName, GLubyte alpha)
+	: EntityWithTexture(imgName, alpha)
 {
-	// Cogemos shader que usa texturas
-	mShader = Shader::get("texture");
-	mTexture = Scene::getTexture(imageName, alpha);
+	mMesh = Mesh::generateBoxOutline(length);
 }
 
-void EntityWithTexture::render(const glm::mat4& modelViewMat) const
+void GlassParapet::render(const glm::mat4& modelViewMat) const
 {
-	if (mMesh != nullptr)
-	{
+	if (mMesh) {
 		glm::mat4 aMat = modelViewMat * mModelMat; // glm matrix multiplication
 		mShader->use();
+
 		// Ponemos el uniform modulate
 		mShader->setUniform("modulate", mModulate);
 		upload(aMat);
+
+		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+
 		// Si la textura no es nula renderizamos la malla con la textura
 		if (mTexture)
 		{

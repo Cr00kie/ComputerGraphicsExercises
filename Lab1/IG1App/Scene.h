@@ -40,6 +40,8 @@ protected:
 	void resetGL();
 
 	std::vector<Abs_Entity*> gObjects; // Entities (graphic objects) of the scene
+	std::vector<Abs_Entity*> gTranslucidObjects; // Entities (graphic objects) of the scene
+
 	static inline std::unordered_map<std::string, std::unique_ptr<Texture>> gTextures; // Textures in the scene
 };
 

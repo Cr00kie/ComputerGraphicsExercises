@@ -1,10 +1,10 @@
 #pragma once
-#include "SingleColorEntity.h"
+#include "EntityWithTexture.h"
 class Star3D :
-    public SingleColorEntity
+    public EntityWithTexture
 {
 public:
-    Star3D(GLdouble re, GLuint np, GLdouble h, glm::vec4 color);
+    Star3D(GLdouble re, GLuint np, GLdouble h, const std::string& imgPath);
 
     void render(const glm::mat4& modelViewMat) const override;
     void update() override;
