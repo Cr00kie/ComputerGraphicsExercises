@@ -83,6 +83,7 @@
     <ClInclude Include="EntidadesLabs\RGBTriangle.h" />
     <ClInclude Include="EntidadesLabs\RGBRectangle.h" />
     <ClInclude Include="EntidadesLabs\RGBCube.h" />
+    <ClInclude Include="EntidadesLabs\Photo.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="Escenas\Scene1.h" />
     <ClInclude Include="Escenas\Scene2.h" />
@@ -110,6 +111,7 @@
     <ClCompile Include="EntidadesLabs\RGBTriangle.cpp" />
     <ClCompile Include="EntidadesLabs\RGBRectangle.cpp" />
     <ClCompile Include="EntidadesLabs\RGBCube.cpp" />
+    <ClCompile Include="EntidadesLabs\Photo.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="Escenas\Scene1.cpp" />
     <ClCompile Include="Escenas\Scene2.cpp" />
