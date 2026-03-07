@@ -76,6 +76,7 @@
     <ClInclude Include="EntidadesLabs\Ground.h" />
     <ClInclude Include="EntidadesLabs\EntityWithTexture.h" />
     <ClInclude Include="EntidadesLabs\GlassParapet.h" />
+    <ClInclude Include="EntidadesLabs\Grass.h" />
     <ClInclude Include="IG1App.h" />
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Image.h" />
@@ -103,6 +104,7 @@
     <ClCompile Include="EntidadesLabs\Ground.cpp" />
     <ClCompile Include="EntidadesLabs\EntityWithTexture.cpp" />
     <ClCompile Include="EntidadesLabs\GlassParapet.cpp" />
+    <ClCompile Include="EntidadesLabs\Grass.cpp" />
     <ClCompile Include="IG1App.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Mesh.cpp" />

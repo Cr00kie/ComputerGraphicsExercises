@@ -5,6 +5,7 @@
 #include "Escenas/Scene2.h"
 #include "Escenas/Scene3.h"
 #include "Escenas/Scene4.h"
+#include "Image.h"
 
 using namespace std;
 
@@ -195,6 +196,36 @@ IG1App::key(unsigned int key)
 		case 'u':
 			mScenes[mCurrentScene]->update();
 			break;
+		case 'F': {
+			// Creamos la textura
+			Texture txr;
+			txr.loadColorBuffer(mWinW, mWinH);
+
+			// Traemos los datos de la textura a CPU
+			std::vector<glm::u8vec4> pixels(mWinW * mWinH);
+			txr.bind();
+			glGetTexImage(GL_TEXTURE_2D, 0, GL_RGBA, GL_UNSIGNED_BYTE, pixels.data());
+			txr.unbind();
+
+			// Invertimos la imagen verticalmente pq OpenGL es muy gracioso
+			for (int y = 0; y < mWinH / 2; ++y)
+			{
+				for (int x = 0; x < mWinW; ++x)
+				{
+					std::swap(
+						pixels[y * mWinW + x],
+						pixels[(mWinH - 1 - y) * mWinW + x]
+					);
+				}
+			}
+
+			// Guardamos la imagen en los archivos
+			Image captura;
+			captura.load(pixels.data(), GLsizei(mWinW), GLsizei(mWinH));
+			captura.save("../assets/images/captura.bmp");
+			break;
+
+		}
 		default:
 			if (key >= '0' && key <= '9') {
 				if (changeScene(key - '0')) break;

@@ -3,6 +3,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <array>
+#include <stdexcept>
 
 using namespace glm;
 
@@ -108,8 +109,14 @@ Texture* Scene::getTexture(const std::string& name, GLubyte alpha)
 
 	if (it == gTextures.end()) {
 		auto texture = std::make_unique<Texture>();
-		// Load the texture from file (under the texture root)
-		texture->load("../assets/images/" + name, alpha);
+		try
+		{
+			// Load the texture from file (under the texture root)
+			texture->load("../assets/images/" + name, alpha);
+		}
+		// Si no se encuentra capturamos el error, pero no paramos, se quedará una textura negra
+		catch(std::logic_error){}
+
 		it = gTextures.insert({ name, std::move(texture) }).first;
 	}
 

@@ -1,12 +1,15 @@
-#pragma once
+#ifndef _H_Photo_H_
+#define _H_Photo_H_
+
 #include "EntityWithTexture.h"
 class Photo : public EntityWithTexture
 {
 public:
-	Photo(GLdouble length, const std::string& imageName, GLfloat alpha = 255);
+	Photo(GLdouble length, GLfloat alpha = 255);
 
 	void update() override;
 private:
 	GLdouble mLength;
 };
 
+#endif

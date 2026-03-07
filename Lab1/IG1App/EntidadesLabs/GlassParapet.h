@@ -1,4 +1,7 @@
-#pragma once
+#ifndef _H_GlassParapet_H_
+#define _H_GlassParaper_H_
+
+
 #include "EntityWithTexture.h"
 class GlassParapet : public EntityWithTexture
 {
@@ -8,3 +11,4 @@ public:
 	void render(const glm::mat4& modelViewMat) const override;
 };
 
+#endif

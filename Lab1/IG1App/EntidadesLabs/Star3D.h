@@ -1,4 +1,6 @@
-#pragma once
+#ifndef _H_Star3D_H_
+#define _H_Star3d_H_
+
 #include "EntityWithTexture.h"
 class Star3D :
     public EntityWithTexture
@@ -15,3 +17,4 @@ private:
     float rotationY = 2;
 };
 
+#endif
