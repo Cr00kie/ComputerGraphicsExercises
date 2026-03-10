@@ -27,8 +27,14 @@ void Star3D::render(const glm::mat4& modelViewMat) const
 
 void Star3D::update()
 {
-	glm::mat4 rotZ = glm::rotate(modelMat(), glm::radians(rotationZ), glm::vec3(0, 0, 1));
-	glm::mat4 rotY = glm::rotate(glm::mat4(1), glm::radians(rotationY), glm::vec3(0, 1, 0));
+	rotationY += rotSpeedY;
+	rotationZ += rotSpeedZ;
 
-	setModelMat(rotY * rotZ);
+	glm::mat4 T = glm::mat4(1);
+
+	T = glm::translate(T, glm::vec3(mModelMat[3][0], mModelMat[3][1], mModelMat[3][2]));
+	T = glm::rotate(T, glm::radians(rotationY), glm::vec3(0.0, 1.0, 0.0));
+	T = glm::rotate(T, glm::radians(rotationZ), glm::vec3(0.0, 0.0, 1.0));
+
+	setModelMat(T);
 }

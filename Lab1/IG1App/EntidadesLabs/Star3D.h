@@ -15,6 +15,8 @@ private:
 
     float rotationZ = 4;
     float rotationY = 2;
+    float rotSpeedZ = 1;
+    float rotSpeedY = 1;
 };
 
 #endif
