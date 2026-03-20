@@ -226,6 +226,28 @@ IG1App::key(unsigned int key)
 			break;
 
 		}
+		case 'a':
+			mCamera->moveLR(-cameraSpeed);
+			break;
+		case 'd':
+			mCamera->moveLR(cameraSpeed);
+			break;
+		case 'w':
+			mCamera->moveUD(cameraSpeed);
+			break;
+		case 's':
+			mCamera->moveUD(-cameraSpeed);
+			break;
+		case 'W':
+			mCamera->moveFB(cameraSpeed);
+			break;
+		case 'S':
+			mCamera->moveFB(-cameraSpeed);
+			break;
+		case 'p':
+			mCamera->changePrj();
+			need_redisplay = true;
+			break;
 		default:
 			if (key >= '0' && key <= '9') {
 				if (changeScene(key - '0')) break;
@@ -256,9 +278,9 @@ IG1App::specialkey(int key, int scancode, int action, int mods)
 			break;
 		case GLFW_KEY_RIGHT:
 			if (mods == GLFW_MOD_CONTROL)
-				mCamera->pitch(-1); // rotates -1 on the X axis
+				mCamera->pitchReal(-1); // rotates -1 on the X axis
 			else
-				mCamera->pitch(1); // rotates 1 on the X axis
+				mCamera->pitchReal(1); // rotates 1 on the X axis
 			break;
 		case GLFW_KEY_LEFT:
 			if (mods == GLFW_MOD_CONTROL)

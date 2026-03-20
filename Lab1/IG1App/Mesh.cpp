@@ -340,12 +340,19 @@ Mesh* Mesh::generateBoxOutline(GLdouble length)
 	mesh->vVertices.emplace_back(-length / 2, -length / 2, -length / 2); // 0
 	mesh->vVertices.emplace_back(-length / 2, +length / 2, -length / 2); // 1
 
+	return mesh;
+}
+
+Mesh* Mesh::generateBoxOutlineTexCor(GLdouble length)
+{
+	Mesh* mesh = generateBoxOutline(length);
+
 	// Textura
 	mesh->vTexCoords.reserve(mesh->mNumVertices);
 
 	for (int i = 0; i < 10; i++)
 	{
-		mesh->vTexCoords.emplace_back(i % 2, 1-(i / 2) % 2);
+		mesh->vTexCoords.emplace_back(i % 2, 1 - (i / 2) % 2);
 	}
 
 	/*mesh->vTexCoords.emplace_back(0, 1);

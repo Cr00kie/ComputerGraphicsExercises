@@ -65,6 +65,8 @@ protected:
 	const float FRAME_DURATION = 0.03;
 	bool mUpdateEnabled = false;
 	double mNextUpdate = 0;
+
+	const GLfloat cameraSpeed = 10;
 };
 
 inline Viewport const&

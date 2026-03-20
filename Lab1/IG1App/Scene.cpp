@@ -105,10 +105,11 @@ void Scene::update() {
 Texture* Scene::getTexture(const std::string& name, GLubyte alpha)
 {
 	// Check whether the texture is already loaded
+	// Usamos auto para evitar escribir el tipo del iterador
 	auto it = gTextures.find(name);
 
 	if (it == gTextures.end()) {
-		auto texture = std::make_unique<Texture>();
+		std::unique_ptr<Texture> texture = std::make_unique<Texture>();
 		try
 		{
 			// Load the texture from file (under the texture root)

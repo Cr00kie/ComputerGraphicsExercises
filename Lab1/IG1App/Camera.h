@@ -25,6 +25,16 @@ public:
 	void yaw(GLfloat a);   // rotates a degrees on the Y axis
 	void roll(GLfloat a);  // rotates a degrees on the Z axis
 
+	void moveLR(GLfloat cs);
+	void moveFB(GLfloat cs);
+	void moveUD(GLfloat cs);
+
+	void pitchReal(GLfloat cs);
+	void yawReal(GLfloat cs);
+	void rollReal(GLfloat cs);
+
+	void changePrj();
+
 	// projection matrix
 	glm::mat4 const& projMat() const { return mProjMat; };
 
@@ -47,8 +57,11 @@ protected:
 	glm::mat4 mProjMat;   // projection matrix
 	void uploadPM() const; // transfers projMat to the GPU
 
+	glm::vec3 mRight, mUpward, mFront;
+	void setAxes();
+
 	GLfloat xRight, xLeft, yTop, yBot;     // size of scene visible area
-	GLfloat mNearVal = 1, mFarVal = 10000; // view volume
+	GLfloat mNearVal = 150, mFarVal = 10000; // view volume
 	GLfloat mScaleFact = 1;                // scale factor
 	bool bOrto = true;                      // orthogonal or perspective projection
 

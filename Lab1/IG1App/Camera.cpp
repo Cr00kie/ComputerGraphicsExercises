@@ -2,6 +2,7 @@
 #include "Camera.h"
 
 #include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/matrix_access.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
 using namespace glm;
@@ -28,6 +29,7 @@ void
 Camera::setVM()
 {
 	mViewMat = lookAt(mEye, mLook, mUp); // glm::lookAt defines the view matrix
+	setAxes();
 }
 
 void
@@ -100,12 +102,66 @@ Camera::setPM()
 		                 mFarVal);
 		// glm::ortho defines the orthogonal projection matrix
 	}
+	else {
+		mProjMat = perspective(
+			glm::radians(60.0),
+			(double)mViewPort->width() / (double)mViewPort->height(),
+			(double)mNearVal,
+			(double)mFarVal);
+		/*mProjMat = frustum(xLeft,
+					       xRight,
+					       yBot,
+						   yTop,
+						   mNearVal,
+						   mFarVal);*/
+	}
 }
 
 void
 Camera::uploadPM() const
 {
 	Shader::setUniform4All("projection", mProjMat);
+}
+
+void Camera::setAxes()
+{
+	mRight = glm::row(mViewMat, 0);
+	mUpward = glm::row(mViewMat, 1);
+	mFront = -glm::row(mViewMat, 2);
+}
+
+void Camera::moveLR(GLfloat cs)
+{
+	mEye += mRight * cs;
+	mLook += mRight * cs;
+	setVM();
+}
+
+void Camera::moveFB(GLfloat cs)
+{
+	mEye += mFront * cs;
+	mLook += mFront * cs;
+	setVM();
+}
+
+void Camera::moveUD(GLfloat cs)
+{
+	mEye += mUpward * cs;
+	mLook += mUpward * cs;
+	setVM();
+}
+
+void Camera::pitchReal(GLfloat cs)
+{
+	mLook = glm::rotate(glm::mat4(1), glm::radians(cs), mRight) * glm::vec4(mLook, 1);
+	mUp = glm::rotate(glm::mat4(1), glm::radians(cs), mRight) * glm::vec4(mUp, 1);
+	setVM();
+}
+
+void Camera::changePrj()
+{
+	bOrto = !bOrto;
+	setPM();
 }
 
 void

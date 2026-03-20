@@ -4,7 +4,7 @@
 BoxOutline::BoxOutline(GLdouble length, const std::string& innerImageName, const std::string& outerImageName)
 	: EntityWithTexture(outerImageName), mInnerTexture(Scene::getTexture(innerImageName))
 {
-	mMesh = Mesh::generateBoxOutline(length);
+	mMesh = Mesh::generateBoxOutlineTexCor(length);
 }
 
 void BoxOutline::render(const glm::mat4& modelViewMat) const
