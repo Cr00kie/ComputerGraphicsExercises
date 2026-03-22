@@ -19,6 +19,7 @@ public:
 	glm::mat4 const& viewMat() const { return mViewMat; };
 
 	void set2D();
+	void updateRadius();
 	void set3D();
 
 	void pitch(GLfloat a); // rotates a degrees on the X axis
@@ -32,6 +33,10 @@ public:
 	void pitchReal(GLfloat cs);
 	void yawReal(GLfloat cs);
 	void rollReal(GLfloat cs);
+
+	void orbit(GLfloat incAng, GLfloat incY);
+
+	void setCenital();
 
 	void changePrj();
 
@@ -64,6 +69,7 @@ protected:
 	GLfloat mNearVal = 150, mFarVal = 10000; // view volume
 	GLfloat mScaleFact = 1;                // scale factor
 	bool bOrto = true;                      // orthogonal or perspective projection
+	GLfloat mRadio, mAng;
 
 	Viewport* mViewPort; // the viewport
 

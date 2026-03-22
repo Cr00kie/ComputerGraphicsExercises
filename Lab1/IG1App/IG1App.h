@@ -40,15 +40,24 @@ protected:
 	void destroy();
 
 	void display() const;                      // the scene
+	void display2V() const;                      // the scene
 	void resize(int newWidth, int newHeight);  // the viewport (without changing the scale)
 	void key(unsigned int codepoint);          // keypress event
 	void specialkey(int key, int scancode, int action, int mods); // special keypress event
+	void mouse(int button, int action, int mods);
+	void motion(double x, double y);
+	void mouseWheel(double dx, double dy);
 
 	// static callbacks
-	static void s_display(GLFWwindow*) { s_ig1app.display(); };
+	static void s_display(GLFWwindow*) { 
+		if (s_ig1app.m2Vistas) s_ig1app.display2V();
+		else s_ig1app.display(); };
 	static void s_resize(GLFWwindow*, int newWidth, int newHeight) { s_ig1app.resize(newWidth, newHeight); };
 	static void s_key(GLFWwindow* win, unsigned int codepoint) { s_ig1app.key(codepoint); };
 	static void s_specialkey(GLFWwindow* win, int key, int scancode, int action, int mods) { s_ig1app.specialkey(key, scancode, action, mods); };
+	static void s_mouse(GLFWwindow* win, int button, int action, int mods) { s_ig1app.mouse(button, action, mods); }
+	static void s_motion(GLFWwindow* win, double x, double y) { s_ig1app.motion(x, y); }
+	static void s_mouseWheel(GLFWwindow* win, double dx, double dy) { s_ig1app.mouseWheel(dx, dy); }
 
 	// Viewport position and size
 	Viewport* mViewPort = nullptr;
@@ -58,6 +67,7 @@ protected:
 	std::vector<Scene*> mScenes;
 	size_t mCurrentScene = 0;
 
+	bool m2Vistas = false;
 	bool mNeedsRedisplay = true;   // main event processing loop
 	GLFWwindow* mWindow = nullptr; // window's handle
 	int mWinW = 800;               // window's width
@@ -65,6 +75,9 @@ protected:
 	const float FRAME_DURATION = 0.03;
 	bool mUpdateEnabled = false;
 	double mNextUpdate = 0;
+
+	int mMouseButt = -1;
+	glm::dvec2 mMouseCoord;
 
 	const GLfloat cameraSpeed = 10;
 };

@@ -4,6 +4,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/matrix_access.hpp>
 #include <glm/gtc/type_ptr.hpp>
+#include <iostream>
 
 using namespace glm;
 
@@ -38,7 +39,14 @@ Camera::set2D()
 	mEye = {0, 0, 500};
 	mLook = {0, 0, 0};
 	mUp = {0, 1, 0};
+	mAng = 0;
+	updateRadius();
 	setVM();
+}
+
+void Camera::updateRadius()
+{
+	mRadio = glm::sqrt(glm::pow(mEye.z - mLook.z, 2) + glm::pow(mEye.x - mLook.x, 2));
 }
 
 void
@@ -47,6 +55,8 @@ Camera::set3D()
 	mEye = {500, 500, 500};
 	mLook = {0, 10, 0};
 	mUp = {0, 1, 0};
+	mAng = 0;
+	updateRadius();
 	setVM();
 }
 
@@ -104,7 +114,7 @@ Camera::setPM()
 	}
 	else {
 		mProjMat = perspective(
-			glm::radians(60.0),
+			glm::radians(60.0) * mScaleFact,
 			(double)mViewPort->width() / (double)mViewPort->height(),
 			(double)mNearVal,
 			(double)mFarVal);
@@ -153,8 +163,46 @@ void Camera::moveUD(GLfloat cs)
 
 void Camera::pitchReal(GLfloat cs)
 {
-	mLook = glm::rotate(glm::mat4(1), glm::radians(cs), mRight) * glm::vec4(mLook, 1);
-	mUp = glm::rotate(glm::mat4(1), glm::radians(cs), mRight) * glm::vec4(mUp, 1);
+	glm::mat4 rot = glm::rotate(glm::mat4(1.f), glm::radians(cs), mRight);
+
+	mLook =  mEye + glm::vec3(rot * glm::vec4(mLook - mEye, 0));
+	mUp = glm::vec3(rot * glm::vec4(mUp, 0));
+
+	setVM();
+}
+
+void Camera::yawReal(GLfloat cs)
+{
+	glm::mat4 rot = glm::rotate(glm::mat4(1.f), glm::radians(cs), mUpward);
+	mLook = mEye + glm::vec3(rot * glm::vec4(mLook-mEye, 0));
+
+	setVM();
+}
+
+void Camera::rollReal(GLfloat cs)
+{
+	mUp = glm::vec4(mUp, 1) * glm::rotate(glm::mat4(1), glm::radians(cs), mFront);
+
+	setVM();
+}
+
+void Camera::orbit(GLfloat incAng, GLfloat incY)
+{
+	updateRadius();
+
+	mAng += incAng;
+	mEye.x = mLook.x + cos(radians(mAng)) * mRadio;
+	mEye.z = mLook.z - sin(radians(mAng)) * mRadio;
+	mEye.y += incY;
+	setVM();
+
+}
+
+void Camera::setCenital()
+{
+	mEye = { 0, 700, 0 };
+	mLook = { 0, 0, 0 };
+	mUp = { 1, 0, 0 };
 	setVM();
 }
 
