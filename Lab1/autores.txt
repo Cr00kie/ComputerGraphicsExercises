@@ -1,6 +1,4 @@
 ADRIAN ISASI MARTINEZ
 TELMO KISSOCA BAILÁN
 
-Hemos realizado los siguientes ejercicios opcionales:
-- El objeto de hierba (apartado 33)
-- Guardado de la imagen (apartado 36)
+No hay opcionales realizados
