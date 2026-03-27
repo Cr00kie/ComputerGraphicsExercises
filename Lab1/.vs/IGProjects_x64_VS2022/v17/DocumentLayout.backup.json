@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -53,6 +53,18 @@
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "IG1App.h",
@@ -62,8 +74,7 @@
               "RelativeToolTip": "IG1App\\IG1App.h",
               "ViewState": "AgIAACUAAAAAAAAAAAAowE4AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-22T12:20:24.25Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-22T12:20:24.25Z"
             },
             {
               "$type": "Document",
@@ -75,8 +86,7 @@
               "RelativeToolTip": "IG1App\\Camera.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-22T10:59:01.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-22T10:59:01.037Z"
             },
             {
               "$type": "Document",
@@ -88,8 +98,7 @@
               "RelativeToolTip": "IG1App\\IG1App.cpp",
               "ViewState": "AgIAAE4BAAAAAAAAAAAIwHABAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-22T10:59:33.878Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-22T10:59:33.878Z"
             },
             {
               "$type": "Document",
@@ -99,7 +108,7 @@
               "RelativeDocumentMoniker": "IG1App\\Camera.cpp",
               "ToolTip": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Camera.cpp",
               "RelativeToolTip": "IG1App\\Camera.cpp",
-              "ViewState": "AgIAAK8AAAAAAAAAAAAIwDIAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAIwDAAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-03-22T10:58:11.405Z",
               "EditorCaption": ""

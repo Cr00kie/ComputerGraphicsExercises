@@ -354,9 +354,6 @@ void IG1App::motion(double x, double y)
 	glm::dvec2 mdelta = newMousePos - mMouseCoord;
 	mMouseCoord = newMousePos;
 
-	std::cout << mMouseButt << '\n';
-	if (mMouseButt == GLFW_MOUSE_BUTTON_LAST) std::cout << "NO BUTTON PRESSED\n";
-
 	if (mMouseButt == GLFW_MOUSE_BUTTON_RIGHT)
 	{
 		mCamera->moveLR(-mdelta.x);
