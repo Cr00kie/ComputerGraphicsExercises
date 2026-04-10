@@ -175,6 +175,7 @@ void Camera::yawReal(GLfloat cs)
 {
 	glm::mat4 rot = glm::rotate(glm::mat4(1.f), glm::radians(cs), mUpward);
 	mLook = mEye + glm::vec3(rot * glm::vec4(mLook-mEye, 0));
+	mUp = glm::vec3(rot * glm::vec4(mUp, 0));
 
 	setVM();
 }
