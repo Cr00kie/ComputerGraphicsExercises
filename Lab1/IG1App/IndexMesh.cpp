@@ -45,6 +45,110 @@ IndexMesh* IndexMesh::generateByRevolution(const std::vector<glm::vec2>& profile
 	return mesh;
 }
 
+IndexMesh* IndexMesh::generateIndexedBox8(GLdouble length)
+{
+	IndexMesh* mesh = new IndexMesh;
+	mesh->mPrimitive = GL_TRIANGLES;
+	mesh->mNumVertices = 8;
+
+	GLdouble l = length / 2;
+
+	mesh->vVertices = {
+		{ l,  l, -l}, 
+		{ l, -l, -l}, 
+		{-l,  l, -l}, 
+		{-l, -l, -l},
+		{-l,  l,  l}, 
+		{-l, -l,  l}, 
+		{ l,  l,  l}, 
+		{ l, -l,  l}
+	};
+
+	mesh->vIndexes = {
+		0, 1, 2,  2, 1, 3,  // Back
+		4, 5, 6,  6, 5, 7,  // Front
+		2, 3, 4,  4, 3, 5,  // Left
+		6, 7, 0,  0, 7, 1,  // Right
+		2, 4, 0,  0, 4, 6,  // Top
+		5, 3, 1,  1, 7, 5   // Bottom
+	};
+
+	mesh->buildNormalVectors();
+
+	return mesh;
+}
+
+IndexMesh* IndexMesh::generateIndexedBox(GLdouble l)
+{
+	IndexMesh* mesh = new IndexMesh;
+	mesh->mPrimitive = GL_TRIANGLES;
+	mesh->mNumVertices = 24;
+
+	//	4 - - - - - - - - - 2
+	//	 | \             | \
+	//	 |   - - - - - - - - -
+	//	 |   |6          |   |0
+	//	 |   |           |   |
+	//	 |   |           |   |
+	//	 |   |           |   |
+	//	 |   |           |3  |
+	//	5 - -| - - - - - -   |
+	//	   \ |7            \ |1
+	//	     - - - - - - - - -
+	//
+	//		 y |
+	//		   |
+	//	   z - -
+	//			\ x
+
+	mesh->vVertices = {
+		{ l,  l, -l}, // 0x - 0
+		{ l,  l, -l}, // 0y - 1
+		{ l,  l, -l}, // 0z - 2
+
+		{ l, -l, -l}, // 1x - 3
+		{ l, -l, -l}, // 1y - 4
+		{ l, -l, -l}, // 1z - 5
+
+		{-l,  l, -l}, // 2x - 6
+		{-l,  l, -l}, // 2y - 7
+		{-l,  l, -l}, // 2z - 8
+
+		{-l, -l, -l}, // 3x - 9
+		{-l, -l, -l}, // 3y - 10
+		{-l, -l, -l}, // 3z - 11
+
+		{-l,  l,  l}, // 4x - 12
+		{-l,  l,  l}, // 4y - 13
+		{-l,  l,  l}, // 4z - 14
+
+		{-l, -l,  l}, // 5x - 15
+		{-l, -l,  l}, // 5y - 16
+		{-l, -l,  l}, // 5z - 17
+
+		{ l,  l,  l}, // 6x - 18
+		{ l,  l,  l}, // 6y - 19
+		{ l,  l,  l}, // 6z - 20
+
+		{ l, -l,  l}, // 7x - 21
+		{ l, -l,  l}, // 7y - 22
+		{ l, -l,  l}  // 7z - 23
+	};
+
+	mesh->vIndexes = {
+		 2,  5,  8,   5, 11,  8,  // Back
+		14, 17, 20,  20, 17, 23,  // Front
+		 6,  9, 12,  12,  9, 15,  // Left
+		18,  21, 0,  21,  3,  0,  // Right
+		 7, 13,  1,   1, 13, 19,  // Top
+		16, 10,  4,   4, 22, 16   // Bottom
+	};
+
+	mesh->buildNormalVectors();
+
+	return mesh;
+}
+
 void IndexMesh::draw() const
 {
 	glDrawElements(

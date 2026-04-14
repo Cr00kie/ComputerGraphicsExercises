@@ -216,8 +216,8 @@ void Camera::changePrj()
 void
 Camera::upload() const
 {
-	// Ponemos dirección de luz en el shader a las coordenadas homogéneas: 1,1.5,1.25,1 (world coords)
-	glm::vec4 lightDir = glm::vec4(1, 1.5, 1.25, 0); // TODO: En el enunciado pone -1, -1.5, -1.25, Pero eso lo ilumina desde abajo. Estamos haciendo algo mal?
+	// Ponemos dirección de luz en el shader a las coordenadas homogéneas: -1, -1.5, -1.25,0 (world coords)
+	glm::vec4 lightDir = glm::vec4(-1, -1.5, -1.25, 0);
 
 	Shader* shader = Shader::get("simple_light");
 	shader->use();

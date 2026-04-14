@@ -6,7 +6,9 @@
 #include "Escenas/Scene3.h"
 #include "Escenas/Scene4.h"
 #include "Escenas/Scene5.h"
+#include "Escenas/Scene6.h"
 #include "Image.h"
+#include "EntidadesLabs/ColorMaterialEntity.h"
 
 using namespace std;
 
@@ -81,6 +83,7 @@ IG1App::init()
 	mScenes.push_back(new Scene3);
 	mScenes.push_back(new Scene4);
 	mScenes.push_back(new Scene5);
+	mScenes.push_back(new Scene6);
 
 	mCamera->set2D();
 	for(Scene* s : mScenes)
@@ -278,9 +281,12 @@ IG1App::key(unsigned int key)
 			mCamera->changePrj();
 			need_redisplay = true;
 			break;
-		case 'k':
+		case 'k': // Toggle 2 view mode
 			m2Vistas = !m2Vistas;
 			need_redisplay = true;
+			break;
+		case 'N': // Toggle normal debug info
+			ColorMaterialEntity::toggleShowNormals();
 			break;
 		default:
 			if (key >= '0' && key <= '9') {

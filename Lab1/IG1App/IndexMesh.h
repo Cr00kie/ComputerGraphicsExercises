@@ -14,6 +14,9 @@ public:
 		const std::vector<glm::vec2>& profile, GLuint nSamples,
 		GLfloat angleMax = 2 * std::numbers::pi);
 
+	static IndexMesh* generateIndexedBox8(GLdouble l);
+	static IndexMesh* generateIndexedBox(GLdouble l);
+
 	void draw() const override;
 
 	void load() override;

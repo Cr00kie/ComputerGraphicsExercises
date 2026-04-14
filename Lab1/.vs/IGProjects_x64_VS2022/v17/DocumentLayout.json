@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\IndexMesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\IndexMesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Escenas\\Scene5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Escenas\\Scene5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\IndexedBox.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\IndexedBox.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\ColorMaterialEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -19,36 +23,44 @@
       "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\ColorMaterialEntity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\Torus.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\Torus.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\SingleColorEntity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\SingleColorEntity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\Torus.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\Torus.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\IndexMesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\IndexMesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\IndexedBox.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\IndexedBox.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\IndexMesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\IndexMesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\Torus.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\Torus.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\Torus.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\Torus.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\IG1App.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\IG1App.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\SingleColorEntity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\EntidadesLabs\\SingleColorEntity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Escenas\\Scene6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Escenas\\Scene6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Escenas\\Scene6.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Escenas\\Scene6.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Escenas\\Scene5.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C72F3A79-DA8E-4EC6-A14F-6C59650E8A7E}|IG1App\\IG1App.vcxproj|solutionrelative:IG1App\\Escenas\\Scene5.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,20 +106,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "SingleColorEntity.cpp",
               "DocumentMoniker": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\SingleColorEntity.cpp",
               "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\SingleColorEntity.cpp",
               "ToolTip": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\SingleColorEntity.cpp",
               "RelativeToolTip": "IG1App\\EntidadesLabs\\SingleColorEntity.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-14T11:29:48.815Z",
+              "WhenOpened": "2026-04-14T14:26:38.437Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
+              "Title": "IG1App.cpp",
+              "DocumentMoniker": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\IG1App.cpp",
+              "RelativeDocumentMoniker": "IG1App\\IG1App.cpp",
+              "ToolTip": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\IG1App.cpp",
+              "RelativeToolTip": "IG1App\\IG1App.cpp",
+              "ViewState": "AgIAAPsAAAAAAAAAAAAqwBsBAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-14T14:20:29.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Scene6.cpp",
+              "DocumentMoniker": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Escenas\\Scene6.cpp",
+              "RelativeDocumentMoniker": "IG1App\\Escenas\\Scene6.cpp",
+              "ToolTip": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Escenas\\Scene6.cpp",
+              "RelativeToolTip": "IG1App\\Escenas\\Scene6.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-14T14:17:31.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Scene6.h",
+              "DocumentMoniker": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Escenas\\Scene6.h",
+              "RelativeDocumentMoniker": "IG1App\\Escenas\\Scene6.h",
+              "ToolTip": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Escenas\\Scene6.h",
+              "RelativeToolTip": "IG1App\\Escenas\\Scene6.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-14T14:17:23.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IndexedBox.cpp",
+              "DocumentMoniker": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\IndexedBox.cpp",
+              "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\IndexedBox.cpp",
+              "ToolTip": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\IndexedBox.cpp",
+              "RelativeToolTip": "IG1App\\EntidadesLabs\\IndexedBox.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-14T14:14:59.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IndexedBox.h",
+              "DocumentMoniker": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\IndexedBox.h",
+              "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\IndexedBox.h",
+              "ToolTip": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\IndexedBox.h",
+              "RelativeToolTip": "IG1App\\EntidadesLabs\\IndexedBox.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-14T14:13:52.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Torus.cpp",
               "DocumentMoniker": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\Torus.cpp",
               "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\Torus.cpp",
@@ -120,7 +197,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "Mesh.cpp",
+              "DocumentMoniker": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Mesh.cpp",
+              "RelativeDocumentMoniker": "IG1App\\Mesh.cpp",
+              "ToolTip": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Mesh.cpp",
+              "RelativeToolTip": "IG1App\\Mesh.cpp",
+              "ViewState": "AgIAANQAAAAAAAAAAADwv+gAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-14T10:50:40.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Torus.h",
               "DocumentMoniker": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\Torus.h",
               "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\Torus.h",
@@ -133,85 +223,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "IndexMesh.cpp",
               "DocumentMoniker": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\IndexMesh.cpp",
               "RelativeDocumentMoniker": "IG1App\\IndexMesh.cpp",
               "ToolTip": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\IndexMesh.cpp",
               "RelativeToolTip": "IG1App\\IndexMesh.cpp",
-              "ViewState": "AgIAABUAAAAAAAAAAADgvyoAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAmwF8AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-04-14T11:15:48.217Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "IndexMesh.h",
               "DocumentMoniker": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\IndexMesh.h",
               "RelativeDocumentMoniker": "IG1App\\IndexMesh.h",
               "ToolTip": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\IndexMesh.h",
               "RelativeToolTip": "IG1App\\IndexMesh.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-04-14T11:15:25.279Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Camera.cpp",
               "DocumentMoniker": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Camera.cpp",
               "RelativeDocumentMoniker": "IG1App\\Camera.cpp",
               "ToolTip": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Camera.cpp",
               "RelativeToolTip": "IG1App\\Camera.cpp",
-              "ViewState": "AgIAAMkAAAAAAAAAAAAAANsAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAMkAAAAAAAAAAAAAANsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-04-14T10:56:56.06Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ColorMaterialEntity.cpp",
               "DocumentMoniker": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\ColorMaterialEntity.cpp",
               "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\ColorMaterialEntity.cpp",
               "ToolTip": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\ColorMaterialEntity.cpp",
               "RelativeToolTip": "IG1App\\EntidadesLabs\\ColorMaterialEntity.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-04-14T10:54:25.485Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ColorMaterialEntity.h",
               "DocumentMoniker": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\ColorMaterialEntity.h",
               "RelativeDocumentMoniker": "IG1App\\EntidadesLabs\\ColorMaterialEntity.h",
               "ToolTip": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\EntidadesLabs\\ColorMaterialEntity.h",
               "RelativeToolTip": "IG1App\\EntidadesLabs\\ColorMaterialEntity.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-04-14T10:54:22.47Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Mesh.cpp",
-              "DocumentMoniker": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Mesh.cpp",
-              "RelativeDocumentMoniker": "IG1App\\Mesh.cpp",
-              "ToolTip": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Mesh.cpp",
-              "RelativeToolTip": "IG1App\\Mesh.cpp",
-              "ViewState": "AgIAAHQAAAAAAAAAAADwv2sAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-14T10:50:40.73Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "Mesh.h",
               "DocumentMoniker": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Mesh.h",
               "RelativeDocumentMoniker": "IG1App\\Mesh.h",
@@ -220,32 +297,6 @@
               "ViewState": "AgIAABIAAAAAAAAAAAAAACQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-04-14T10:48:51.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Scene5.cpp",
-              "DocumentMoniker": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Escenas\\Scene5.cpp",
-              "RelativeDocumentMoniker": "IG1App\\Escenas\\Scene5.cpp",
-              "ToolTip": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Escenas\\Scene5.cpp",
-              "RelativeToolTip": "IG1App\\Escenas\\Scene5.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-14T08:39:32.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Scene5.h",
-              "DocumentMoniker": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Escenas\\Scene5.h",
-              "RelativeDocumentMoniker": "IG1App\\Escenas\\Scene5.h",
-              "ToolTip": "C:\\Users\\Adri\u00E1n Isasi\\Documents\\ComputerGraphicsExercises\\Lab1\\IG1App\\Escenas\\Scene5.h",
-              "RelativeToolTip": "IG1App\\Escenas\\Scene5.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-14T08:39:16.342Z",
               "EditorCaption": ""
             }
           ]
