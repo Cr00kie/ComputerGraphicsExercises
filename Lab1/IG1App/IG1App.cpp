@@ -7,6 +7,7 @@
 #include "Escenas/Scene4.h"
 #include "Escenas/Scene5.h"
 #include "Escenas/Scene6.h"
+#include "Escenas/Scene7.h"
 #include "Image.h"
 #include "EntidadesLabs/ColorMaterialEntity.h"
 
@@ -84,6 +85,7 @@ IG1App::init()
 	mScenes.push_back(new Scene4);
 	mScenes.push_back(new Scene5);
 	mScenes.push_back(new Scene6);
+	mScenes.push_back(new Scene7);
 
 	mCamera->set2D();
 	for(Scene* s : mScenes)
@@ -287,6 +289,7 @@ IG1App::key(unsigned int key)
 			break;
 		case 'N': // Toggle normal debug info
 			ColorMaterialEntity::toggleShowNormals();
+			need_redisplay = true;
 			break;
 		default:
 			if (key >= '0' && key <= '9') {
