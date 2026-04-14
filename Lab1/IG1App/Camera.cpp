@@ -39,7 +39,7 @@ Camera::set2D()
 	mEye = {0, 0, 500};
 	mLook = {0, 0, 0};
 	mUp = {0, 1, 0};
-	mAng = 0;
+	mAng = -90;
 	updateRadius();
 	setVM();
 }
@@ -55,7 +55,7 @@ Camera::set3D()
 	mEye = {500, 500, 500};
 	mLook = {0, 10, 0};
 	mUp = {0, 1, 0};
-	mAng = 0;
+	mAng = -45;
 	updateRadius();
 	setVM();
 }
@@ -114,8 +114,8 @@ Camera::setPM()
 	}
 	else {
 		mProjMat = perspective(
-			glm::radians(60.0) * mScaleFact,
-			(double)mViewPort->width() / (double)mViewPort->height(),
+			glm::radians(60.0),
+			((double)mViewPort->width() / (double)mViewPort->height()) * mScaleFact, // TODO: Preguntar a Sinhue si el mScaleFact se aplica aquí?
 			(double)mNearVal,
 			(double)mFarVal);
 		/*mProjMat = frustum(xLeft,

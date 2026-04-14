@@ -363,7 +363,7 @@ void IG1App::motion(double x, double y)
 	}
 	else if (mMouseButt == GLFW_MOUSE_BUTTON_LEFT)
 	{
-		mCamera->orbit(mdelta.x * 0.05, mdelta.y);
+		mCamera->orbit(-mdelta.x * 0.05, mdelta.y);
 
 		mNeedsRedisplay = true;
 	}
