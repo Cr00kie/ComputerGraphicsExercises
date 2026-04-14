@@ -1,4 +1,6 @@
-#pragma once
+#ifndef _H_IndexMesh_H_
+#define _H_IndexMesh_H_
+
 #include "Mesh.h"
 
 #include <numbers>
@@ -18,8 +20,11 @@ public:
 
 	void unload() override;
 
+	void buildNormalVectors();
+
 protected:
 	std::vector<GLuint> vIndexes;
 	GLuint mIBO;
 };
 
+#endif

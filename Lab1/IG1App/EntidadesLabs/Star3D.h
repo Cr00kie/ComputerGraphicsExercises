@@ -1,5 +1,5 @@
 #ifndef _H_Star3D_H_
-#define _H_Star3d_H_
+#define _H_Star3D_H_
 
 #include "EntityWithTexture.h"
 class Star3D :
