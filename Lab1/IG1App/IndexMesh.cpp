@@ -18,18 +18,27 @@ IndexMesh* IndexMesh::generateByRevolution(const std::vector<glm::vec2>& profile
 
 	int tamPerfil = profile.size();
 	mesh->vVertices.reserve(nSamples * tamPerfil);
+	mesh->vTexCoords.reserve(mesh->mNumVertices);
 
 	// Genera los vértices de las muestras
 	GLdouble theta1 = angleMax / nSamples;
 	for (int i = 0; i <= nSamples; ++i) { // muestra i-ésima
 
 		GLdouble c = cos(i * theta1), s = sin(i * theta1);
+		
+		// rota el perfil
+		for (int j = 0; j < tamPerfil; ++j)
+		{
+			// Creamos los vertices de cada anillo
+			mesh->vVertices.emplace_back(profile[j].x * c, profile[j].y, -profile[j].x * s);
 
-		for (auto p : profile) // rota el perfil
-			mesh->vVertices.emplace_back(p.x * c, p.y, -p.x * s);
+			// Añadimos las coordenadas de textura
+			mesh->vTexCoords.emplace_back(float(i) / nSamples, 1 - (float(j) / tamPerfil));
+		}
 	}
 
-	for (int i = 0; i < nSamples; ++i) // caras i a i + 1
+	int i = 0;
+	for (; i < nSamples - 1; ++i) // caras i a i + 1
 		for (int j = 0; j < tamPerfil - 1; ++j) { // una cara
 			if (profile[j].x != 0.0) // triángulo inferior
 				for (auto [s, t] : { pair{i, j}, {i, j + 1}, {i + 1, j} })
@@ -38,6 +47,21 @@ IndexMesh* IndexMesh::generateByRevolution(const std::vector<glm::vec2>& profile
 				for (auto [s, t] : { pair{i, j + 1}, {i + 1, j + 1}, {i + 1, j} })
 					mesh->vIndexes.push_back(s * tamPerfil + t);
 		}
+
+	// Creamos la ultima cara uniendo con la primera o no 
+	// (solo si la intención es dar exactamente una vuelta, asumimos que la intención es dar una vuelta si el ángulo máximo es cercano a 2*pi)
+	int lastSampleIndex = angleMax - std::numbers::pi * 2 < 0.0001 ? 0 : i+1;
+	for (int j = 0; j < tamPerfil - 1; ++j)
+	{ // una cara
+		if (profile[j].x != 0.0) // triángulo inferior
+			for (auto [s, t] : { pair{i, j}, {i, j + 1}, {lastSampleIndex, j} })
+				mesh->vIndexes.push_back(s * tamPerfil + t);
+		if (profile[j + 1].x != 0.0) // triángulo superior
+			for (auto [s, t] : { pair{i, j + 1}, {lastSampleIndex, j + 1}, {lastSampleIndex, j} })
+				mesh->vIndexes.push_back(s * tamPerfil + t);
+	}
+
+
 	mesh->mNumVertices = mesh->vVertices.size();
 
 	mesh->buildNormalVectors();
@@ -147,6 +171,24 @@ IndexMesh* IndexMesh::generateIndexedBox(GLdouble l)
 	mesh->buildNormalVectors();
 
 	return mesh;
+}
+
+IndexMesh* IndexMesh::generateSphere(GLdouble radius, GLuint nParallel, GLuint nMeridians)
+{
+	std::vector<glm::vec2> vProfile(nParallel + 1);
+
+	const float angleDelta = glm::radians(180.f / (float)nParallel);
+	constexpr float offSet = glm::radians(90.f);
+	// Creamos los vertices
+	for (int i = 0; i < nParallel; i++)
+	{
+		float angle = offSet + angleDelta * i;
+		vProfile[i] = { radius * glm::cos(angle), radius * glm::sin(angle) };
+	}
+
+	vProfile[nParallel] = { 0, -radius };
+
+	return IndexMesh::generateByRevolution(vProfile, nMeridians);
 }
 
 void IndexMesh::draw() const

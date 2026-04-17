@@ -69,6 +69,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="EntidadesLabs\CompoundEntity.h" />
     <ClInclude Include="EntidadesLabs\ColorMaterialEntity.h" />
     <ClInclude Include="EntidadesLabs\BoxOutline.h" />
     <ClInclude Include="Camera.h" />
@@ -102,11 +103,13 @@
     <ClInclude Include="Shader.h" />
     <ClInclude Include="EntidadesLabs\SingleColorEntity.h" />
     <ClInclude Include="EntidadesLabs\Star3D.h" />
+    <ClInclude Include="EntidadesLabs\SphereWithTexture.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="EntidadesLabs\Torus.h" />
     <ClInclude Include="Viewport.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="EntidadesLabs\CompoundEntity.cpp" />
     <ClCompile Include="EntidadesLabs\ColorMaterialEntity.cpp" />
     <ClCompile Include="EntidadesLabs\BoxOutline.cpp" />
     <ClCompile Include="Camera.cpp" />
@@ -141,6 +144,7 @@
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="EntidadesLabs\SingleColorEntity.cpp" />
     <ClCompile Include="EntidadesLabs\Star3D.cpp" />
+    <ClCompile Include="EntidadesLabs\SphereWithTexture.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="EntidadesLabs\Torus.cpp" />
     <ClCompile Include="Viewport.cpp" />
