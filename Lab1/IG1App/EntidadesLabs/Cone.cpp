@@ -10,14 +10,14 @@ Cone::Cone(GLdouble h, GLdouble r, GLdouble R, GLuint nRings, GLuint nSamples, g
 	float stepY = h / nRings;
 	float stepX = (r - R) / nRings;
 
-	float ringX = R;
-	float ringY = h / 2;
+	float ringX = r;
+	float ringY = -h / 2;
 	for (int i = 0; i <= nRings; i++)
 	{
 		vProfile[i] = { ringX, ringY };
 
-		ringX += stepX;
-		ringY -= stepY;
+		ringX -= stepX;
+		ringY += stepY;
 	}
 
 	mMesh = IndexMesh::generateByRevolution(vProfile, nSamples);

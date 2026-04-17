@@ -41,10 +41,10 @@ IndexMesh* IndexMesh::generateByRevolution(const std::vector<glm::vec2>& profile
 	for (; i < nSamples - 1; ++i) // caras i a i + 1
 		for (int j = 0; j < tamPerfil - 1; ++j) { // una cara
 			if (profile[j].x != 0.0) // triángulo inferior
-				for (auto [s, t] : { pair{i, j}, {i, j + 1}, {i + 1, j} })
+				for (auto [s, t] : { pair{i, j}, {i + 1, j}, {i, j + 1} })
 					mesh->vIndexes.push_back(s * tamPerfil + t);
 			if (profile[j + 1].x != 0.0) // triángulo superior
-				for (auto [s, t] : { pair{i, j + 1}, {i + 1, j + 1}, {i + 1, j} })
+				for (auto [s, t] : { pair{i, j + 1}, {i + 1, j}, {i + 1, j + 1} })
 					mesh->vIndexes.push_back(s * tamPerfil + t);
 		}
 
@@ -54,10 +54,10 @@ IndexMesh* IndexMesh::generateByRevolution(const std::vector<glm::vec2>& profile
 	for (int j = 0; j < tamPerfil - 1; ++j)
 	{ // una cara
 		if (profile[j].x != 0.0) // triángulo inferior
-			for (auto [s, t] : { pair{i, j}, {i, j + 1}, {lastSampleIndex, j} })
+			for (auto [s, t] : { pair{i, j}, {lastSampleIndex, j}, {i, j + 1}  })
 				mesh->vIndexes.push_back(s * tamPerfil + t);
 		if (profile[j + 1].x != 0.0) // triángulo superior
-			for (auto [s, t] : { pair{i, j + 1}, {lastSampleIndex, j + 1}, {lastSampleIndex, j} })
+			for (auto [s, t] : { pair{i, j + 1}, {lastSampleIndex, j}, {lastSampleIndex, j + 1} })
 				mesh->vIndexes.push_back(s * tamPerfil + t);
 	}
 
@@ -178,15 +178,15 @@ IndexMesh* IndexMesh::generateSphere(GLdouble radius, GLuint nParallel, GLuint n
 	std::vector<glm::vec2> vProfile(nParallel + 1);
 
 	const float angleDelta = glm::radians(180.f / (float)nParallel);
-	constexpr float offSet = glm::radians(90.f);
+	constexpr float offSet = glm::radians(-90.f);
 	// Creamos los vertices
 	for (int i = 0; i < nParallel; i++)
 	{
-		float angle = offSet + angleDelta * i;
+		float angle = offSet - angleDelta * i;
 		vProfile[i] = { radius * glm::cos(angle), radius * glm::sin(angle) };
 	}
 
-	vProfile[nParallel] = { 0, -radius };
+	vProfile[nParallel] = { 0, radius };
 
 	return IndexMesh::generateByRevolution(vProfile, nMeridians);
 }

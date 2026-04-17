@@ -36,7 +36,7 @@ public:
 
 protected:
 	void destroy();
-	void setGL();
+	virtual void setGL();
 	void resetGL();
 
 	std::vector<Abs_Entity*> gObjects; // Entities (graphic objects) of the scene

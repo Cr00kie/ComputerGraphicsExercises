@@ -8,6 +8,7 @@
 #include "Escenas/Scene5.h"
 #include "Escenas/Scene6.h"
 #include "Escenas/Scene7.h"
+#include "Escenas/Scene8.h"
 #include "Image.h"
 #include "EntidadesLabs/ColorMaterialEntity.h"
 
@@ -86,6 +87,7 @@ IG1App::init()
 	mScenes.push_back(new Scene5);
 	mScenes.push_back(new Scene6);
 	mScenes.push_back(new Scene7);
+	mScenes.push_back(new Scene8);
 
 	mCamera->set2D();
 	for(Scene* s : mScenes)

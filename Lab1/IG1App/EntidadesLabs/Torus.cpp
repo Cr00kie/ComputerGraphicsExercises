@@ -12,7 +12,7 @@ Torus::Torus(GLdouble R, GLdouble r, GLuint nPoints, GLuint nSamples, glm::vec4 
 	// Creamos los vertices
 	for (int i = 0; i < nPoints; i++)
 	{
-		float angle = offSet - angleDelta * i;
+		float angle = offSet + angleDelta * i;
 		vProfile[i] = { R + r * glm::cos(angle), r * glm::sin(angle) };
 	}
 

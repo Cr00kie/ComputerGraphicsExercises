@@ -69,6 +69,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="EntidadesLabs\Droid.h" />
     <ClInclude Include="EntidadesLabs\CompoundEntity.h" />
     <ClInclude Include="EntidadesLabs\ColorMaterialEntity.h" />
     <ClInclude Include="EntidadesLabs\BoxOutline.h" />
@@ -100,6 +101,7 @@
     <ClInclude Include="Escenas\Scene3.h" />
     <ClInclude Include="Escenas\Scene4.h" />
     <ClInclude Include="Escenas\Scene5.h" />
+    <ClInclude Include="Escenas\Scene8.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="EntidadesLabs\SingleColorEntity.h" />
     <ClInclude Include="EntidadesLabs\Star3D.h" />
@@ -109,6 +111,7 @@
     <ClInclude Include="Viewport.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="EntidadesLabs\Droid.cpp" />
     <ClCompile Include="EntidadesLabs\CompoundEntity.cpp" />
     <ClCompile Include="EntidadesLabs\ColorMaterialEntity.cpp" />
     <ClCompile Include="EntidadesLabs\BoxOutline.cpp" />
@@ -141,6 +144,7 @@
     <ClCompile Include="Escenas\Scene3.cpp" />
     <ClCompile Include="Escenas\Scene4.cpp" />
     <ClCompile Include="Escenas\Scene5.cpp" />
+    <ClCompile Include="Escenas\Scene8.cpp" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="EntidadesLabs\SingleColorEntity.cpp" />
     <ClCompile Include="EntidadesLabs\Star3D.cpp" />
