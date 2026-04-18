@@ -48,6 +48,10 @@ Scene::load()
 
 	for (Abs_Entity* obj : gTranslucidObjects)
 		obj->load();
+
+	// Llamamos aqui a setGL para cambiar el color de fondo
+	// TODO: Preguntar si este es el sitio / la forma correcta.
+	setGL();
 }
 
 void

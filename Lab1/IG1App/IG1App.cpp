@@ -9,6 +9,7 @@
 #include "Escenas/Scene6.h"
 #include "Escenas/Scene7.h"
 #include "Escenas/Scene8.h"
+#include "Escenas/Scene9.h"
 #include "Image.h"
 #include "EntidadesLabs/ColorMaterialEntity.h"
 
@@ -88,6 +89,7 @@ IG1App::init()
 	mScenes.push_back(new Scene6);
 	mScenes.push_back(new Scene7);
 	mScenes.push_back(new Scene8);
+	mScenes.push_back(new Scene9);
 
 	mCamera->set2D();
 	for(Scene* s : mScenes)
@@ -292,6 +294,12 @@ IG1App::key(unsigned int key)
 		case 'N': // Toggle normal debug info
 			ColorMaterialEntity::toggleShowNormals();
 			need_redisplay = true;
+			break;
+		case 'f': // Rotate scene 8 (muy raro hacerlo aqui pero es lo q entiendo)
+			mScenes[mCurrentScene]->rotate();
+			break;
+		case 'g': // orbit scene 8
+			mScenes[mCurrentScene]->orbit();
 			break;
 		default:
 			if (key >= '0' && key <= '9') {

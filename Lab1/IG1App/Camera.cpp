@@ -115,7 +115,7 @@ Camera::setPM()
 	else {
 		mProjMat = perspective(
 			glm::radians(60.0 * mScaleFact),
-			((double)mViewPort->width() / (double)mViewPort->height()), // TODO: Preguntar a Sinhue si el mScaleFact se aplica aquí?
+			((double)mViewPort->width() / (double)mViewPort->height()),
 			(double)mNearVal,
 			(double)mFarVal);
 		/*mProjMat = frustum(xLeft,

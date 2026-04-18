@@ -34,6 +34,10 @@ public:
 	void load();
 	void unload();
 
+	// Segun el enunciado, esto va aqui, pero no entiendo muy bien porque
+	virtual void rotate() {}
+	virtual void orbit() {}
+
 protected:
 	void destroy();
 	virtual void setGL();
