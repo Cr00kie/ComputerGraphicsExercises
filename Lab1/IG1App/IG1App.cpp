@@ -10,6 +10,7 @@
 #include "Escenas/Scene7.h"
 #include "Escenas/Scene8.h"
 #include "Escenas/Scene9.h"
+#include "Escenas/Scene10.h"
 #include "Image.h"
 #include "EntidadesLabs/ColorMaterialEntity.h"
 
@@ -80,7 +81,7 @@ IG1App::init()
 	// allocate memory and resources
 	mViewPort = new Viewport(mWinW, mWinH);
 	mCamera = new Camera(mViewPort);
-	mScenes.push_back(new Scene);
+	mScenes.push_back(new Scene10);
 	mScenes.push_back(new Scene1);
 	mScenes.push_back(new Scene2);
 	mScenes.push_back(new Scene3);
@@ -300,6 +301,15 @@ IG1App::key(unsigned int key)
 			break;
 		case 'g': // orbit scene 8
 			mScenes[mCurrentScene]->orbit();
+			break;
+		case 'r': // toggle default light
+			mScenes[mCurrentScene]->toggleLight("dirLights[0]");
+			break;
+		case 't':
+			mScenes[mCurrentScene]->toggleLight("posLights[0]");
+			break;
+		case 'y':
+			mScenes[mCurrentScene]->toggleLight("spotLights[0]");
 			break;
 		default:
 			if (key >= '0' && key <= '9') {

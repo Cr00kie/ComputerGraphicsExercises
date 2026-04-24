@@ -3,9 +3,11 @@
 bool ColorMaterialEntity::sShowNormals = false;
 
 ColorMaterialEntity::ColorMaterialEntity(glm::vec4 col)
-	: SingleColorEntity(col)
+	: EntityWithMaterial()
 {
-	mShader = Shader::get("simple_light");
+	mMaterial.setAmb(col);
+	mMaterial.setDiff(col);
+	mMaterial.setSpec(col);
 }
 
 void ColorMaterialEntity::toggleShowNormals()
@@ -15,7 +17,7 @@ void ColorMaterialEntity::toggleShowNormals()
 
 void ColorMaterialEntity::render(const glm::mat4& modelViewMat) const
 {
-	SingleColorEntity::render(modelViewMat);
+	EntityWithMaterial::render(modelViewMat);
 
 	if (mMesh != nullptr && sShowNormals)
 	{

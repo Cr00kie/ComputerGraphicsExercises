@@ -4,6 +4,7 @@
 #include "../EntidadesLabs/Droid.h"
 #include "../EntidadesLabs/CompoundEntity.h"
 #include "glm/gtc/matrix_transform.hpp"
+#include "../Light.h"
 
 void Scene8::init()
 {
@@ -26,6 +27,25 @@ void Scene8::init()
 	mOrbitNode->addEntity(mDroid);
 
 	gObjects.push_back(mOrbitNode);
+
+	// Lights
+	PosLight* spotLightT = new PosLight(0);
+	spotLightT->setPosition({ 0, planetRadius * 1.5, 0 });
+	
+	spotLightT->setAmb({ 0.25, 0.25, 0.25 });
+	spotLightT->setDiff({ 0.6, 0.6, 0.6 });
+	spotLightT->setSpec({ 0.0, 0.2, 0.0 });
+
+	gLights.push_back(spotLightT);
+
+	// TODO: Los bordes se ven difuminados
+	SpotLight* spotLightY = new SpotLight({ 0, 0, planetRadius * 1.1 }, 0);
+	
+	spotLightY->setAmb({ 0.25, 0.25, 0.25 });
+	spotLightY->setDiff({ 0.6, 0.6, 0.6 });
+	spotLightY->setSpec({ 0.0, 0.2, 0.0 });
+
+	gLights.push_back(spotLightY);
 }
 
 void Scene8::rotate()

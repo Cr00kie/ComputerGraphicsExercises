@@ -1,5 +1,7 @@
 #include "Scene.h"
 
+#include "Light.h"
+
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <array>
@@ -18,6 +20,12 @@ Scene::init()
 
 	// Graphics objects (entities) of the scene
 	gObjects.push_back(new RGBAxes(400.0));
+	
+	DirLight* light = new DirLight(0);
+	light->setAmb({ 0.25, 0.25, 0.25 });
+	light->setDiff({ 0.6, 0.6, 0.6 });
+	light->setSpec({ 0.0, 0.2, 0.0 });
+	gLights.push_back(light);
 }
 
 Scene::~Scene()
@@ -26,9 +34,25 @@ Scene::~Scene()
 	resetGL();
 }
 
+void Scene::toggleLight(std::string id)
+{
+	// TODO: Esto está bien??
+
+	int i = 0;
+	while(i < gLights.size() && gLights[i]->getID() != id)
+		i++;
+	
+	if (i < gLights.size()) {
+		gLights[i]->setEnabled(!gLights[i]->enabled());
+	}
+}
+
 void
 Scene::destroy()
 { // release memory and resources
+
+	for(Light* light : gLights)
+		delete light;
 
 	for (Abs_Entity* el : gObjects)
 		delete el;
@@ -57,6 +81,9 @@ Scene::load()
 void
 Scene::unload()
 {
+	for(Light* light : gLights)
+		light->unload(*Shader::get("simple_light"));
+
 	for (Abs_Entity* obj : gObjects)
 		obj->unload();
 	
@@ -82,6 +109,8 @@ Scene::resetGL()
 void
 Scene::render(Camera const& cam) const
 {
+	uploadLights(cam);
+
 	cam.upload();
 
 	for (Abs_Entity* el : gObjects)
@@ -96,6 +125,12 @@ Scene::render(Camera const& cam) const
 
 	glDepthMask(GL_TRUE);
 	glDisable(GL_BLEND);
+}
+
+void Scene::uploadLights(const Camera& cam) const
+{
+	for (Light* light : gLights)
+		light->upload(*Shader::get("light"), cam.viewMat());
 }
 
 void Scene::update() {

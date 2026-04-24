@@ -3,6 +3,7 @@
 #include "glm/gtc/matrix_transform.hpp"
 #include "Cone.h"
 #include "Disk.h"
+#include "../Light.h"
 
 Droid::Droid(GLdouble bodyRadius)
 {
@@ -38,4 +39,18 @@ Droid::Droid(GLdouble bodyRadius)
 	Disk* tapaSuperior = new Disk(0, headHeight, 1, 20, { 1.0, 1.0, 0.0, 1.0 });
 	tapaSuperior->setModelMat(glm::translate(glm::mat4(1), glm::vec3(0, bodyRadius+headHeight, 0)));
 	addEntity(tapaSuperior);
+
+	// Luces
+	spotLight = new SpotLight({0, 0, 0}, 1);
+
+	spotLight->setAmb({ 0.25, 0.25, 0.25 });
+	spotLight->setDiff({ 0.6, 0.6, 0.6 });
+	spotLight->setSpec({ 0.0, 0.2, 0.0 });
+}
+
+void Droid::render(const glm::mat4& modelViewMat) const
+{
+	// TODO: La luz se mueve un paso por detra´s del droide
+	CompoundEntity::render(modelViewMat);
+	spotLight->upload(*Shader::get("light"), modelViewMat * mModelMat);
 }

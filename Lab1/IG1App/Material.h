@@ -19,6 +19,7 @@ public:
 	void setExp(GLfloat exp);
 
 	void setCopper();
+	void setGolden();
 
 protected:
 	// Coeficientes de reflexión
@@ -26,7 +27,7 @@ protected:
 	glm::vec3 diffuse = {0.8, 0.8, 0.8};
 	glm::vec3 specular = {0.0, 0.0, 0.0};
 	// Exponente para la reflexión especular
-	GLfloat expF = 0;
+	GLfloat expF = 32;
 };
 
 inline void

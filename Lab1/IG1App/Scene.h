@@ -12,6 +12,7 @@
 #include <unordered_map>
 #include <memory>
 
+class Light;
 
 class Scene
 {
@@ -26,6 +27,8 @@ public:
 
 	void render(Camera const& cam) const;
 
+	void uploadLights(const Camera& cam) const;
+
 	virtual void update();
 
 	static Texture* getTexture(const std::string& name, GLubyte alpha = 255);
@@ -37,6 +40,7 @@ public:
 	// Segun el enunciado, esto va aqui, pero no entiendo muy bien porque
 	virtual void rotate() {}
 	virtual void orbit() {}
+	virtual void toggleLight(std::string id);
 
 protected:
 	void destroy();
@@ -45,6 +49,7 @@ protected:
 
 	std::vector<Abs_Entity*> gObjects; // Entities (graphic objects) of the scene
 	std::vector<Abs_Entity*> gTranslucidObjects; // Entities (graphic objects) of the scene
+	std::vector<Light*> gLights; // Lights in the scene
 
 	static inline std::unordered_map<std::string, std::unique_ptr<Texture>> gTextures; // Textures in the scene
 };
