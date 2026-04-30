@@ -45,7 +45,7 @@ public:
 	void setDirection(const glm::vec3& dir);
 
 protected:
-	glm::vec4 direction = {-1, -1, -1, 0};
+	glm::vec4 direction = { -1.f, -1.5f, -1.25f, 0};
 };
 
 inline void

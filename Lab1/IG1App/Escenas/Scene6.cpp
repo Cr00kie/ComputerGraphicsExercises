@@ -5,7 +5,6 @@ void Scene6::init()
 {
 	Scene::init();
 
-	// TODO: El cubo no se ve sombreado
 	IndexedBox* box = new IndexedBox(100, {0,1,0,1});
 	gObjects.push_back(box);
 }

@@ -10,10 +10,7 @@ void Scene8::init()
 {
 	Scene::init();
 
-	// Create planet
 	GLdouble planetRadius = 150;
-	Sphere* planet = new Sphere(planetRadius, 12, 12, { 0.67, 0.129, 0.28, 1 });
-	gObjects.push_back(planet);
 
 	// Create droid
 	GLdouble droidRadius = planetRadius / 10;
@@ -28,24 +25,49 @@ void Scene8::init()
 
 	gObjects.push_back(mOrbitNode);
 
+	// Create planet
+	Sphere* planet = new Sphere(planetRadius, 25, 25, { 0.67, 0.129, 0.28, 1 });
+	gObjects.push_back(planet);
+
+
 	// Lights
-	PosLight* spotLightT = new PosLight(0);
-	spotLightT->setPosition({ 0, planetRadius * 1.5, 0 });
+	mPosLightT = new PosLight(0);
+	mPosLightT->setPosition({ 0, planetRadius * 1.5, 0 });
 	
-	spotLightT->setAmb({ 0.25, 0.25, 0.25 });
-	spotLightT->setDiff({ 0.6, 0.6, 0.6 });
-	spotLightT->setSpec({ 0.0, 0.2, 0.0 });
+	mPosLightT->setAmb({ 0.25, 0.25, 0.25 });
+	mPosLightT->setDiff({ 0.6, 0.6, 0.6 });
+	mPosLightT->setSpec({ 0.0, 0.2, 0.0 });
 
-	gLights.push_back(spotLightT);
+	gLights.push_back(mPosLightT);
 
-	// TODO: Los bordes se ven difuminados
-	SpotLight* spotLightY = new SpotLight({ 0, 0, planetRadius * 1.1 }, 0);
+	mSpotLightY = new SpotLight({ 0, 0, planetRadius * 1.1 }, 0);
 	
-	spotLightY->setAmb({ 0.25, 0.25, 0.25 });
-	spotLightY->setDiff({ 0.6, 0.6, 0.6 });
-	spotLightY->setSpec({ 0.0, 0.2, 0.0 });
+	mSpotLightY->setAmb({ 0.25, 0.25, 0.25 });
+	mSpotLightY->setDiff({ 0.6, 0.6, 0.6 });
+	mSpotLightY->setSpec({ 0.0, 0.2, 0.0 });
+	mSpotLightY->setCutoff(30.f, 30.f);
 
-	gLights.push_back(spotLightY);
+	gLights.push_back(mSpotLightY);
+}
+
+void Scene8::handleKey(unsigned int key)
+{
+	Scene::handleKey(key);
+
+	switch (key) {
+		case 'f':
+			rotate();
+			break;
+		case 'g':
+			orbit();
+			break;
+		case 't':
+			mPosLightT->setEnabled(!mPosLightT->enabled());
+			break;
+		case 'y':
+			mSpotLightY->setEnabled(!mSpotLightY->enabled());
+			break;
+	}
 }
 
 void Scene8::rotate()

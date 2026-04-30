@@ -50,7 +50,6 @@ Droid::Droid(GLdouble bodyRadius)
 
 void Droid::render(const glm::mat4& modelViewMat) const
 {
-	// TODO: La luz se mueve un paso por detra´s del droide
 	CompoundEntity::render(modelViewMat);
 	spotLight->upload(*Shader::get("light"), modelViewMat * mModelMat);
 }

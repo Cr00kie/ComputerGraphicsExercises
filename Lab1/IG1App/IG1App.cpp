@@ -296,27 +296,19 @@ IG1App::key(unsigned int key)
 			ColorMaterialEntity::toggleShowNormals();
 			need_redisplay = true;
 			break;
-		case 'f': // Rotate scene 8 (muy raro hacerlo aqui pero es lo q entiendo)
-			mScenes[mCurrentScene]->rotate();
-			break;
-		case 'g': // orbit scene 8
-			mScenes[mCurrentScene]->orbit();
-			break;
-		case 'r': // toggle default light
-			mScenes[mCurrentScene]->toggleLight("dirLights[0]");
-			break;
-		case 't':
-			mScenes[mCurrentScene]->toggleLight("posLights[0]");
-			break;
-		case 'y':
-			mScenes[mCurrentScene]->toggleLight("spotLights[0]");
-			break;
 		default:
 			if (key >= '0' && key <= '9') {
 				if (changeScene(key - '0')) break;
 				cout << "[NOTE] There is no scene " << char(key) << ".\n";
+				need_redisplay = false;
 			}
-			need_redisplay = false;
+			// Pass key press to scenes
+			else 
+			{
+				mScenes[mCurrentScene]->handleKey(key);
+				need_redisplay = true;
+			}
+
 			break;
 	} // switch
 

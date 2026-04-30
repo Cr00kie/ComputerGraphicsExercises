@@ -22,7 +22,4 @@ void Scene10::init()
 	Material m;
 	m.setGolden();
 	sphere1->setMaterial(m);
-	
-
-	// TODO: Poner la esfera 2 dorada
 }

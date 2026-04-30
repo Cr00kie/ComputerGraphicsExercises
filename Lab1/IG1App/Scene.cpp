@@ -21,30 +21,18 @@ Scene::init()
 	// Graphics objects (entities) of the scene
 	gObjects.push_back(new RGBAxes(400.0));
 	
-	DirLight* light = new DirLight(0);
-	light->setAmb({ 0.25, 0.25, 0.25 });
-	light->setDiff({ 0.6, 0.6, 0.6 });
-	light->setSpec({ 0.0, 0.2, 0.0 });
-	gLights.push_back(light);
+	// Create default scene light
+	mDefaultLight = new DirLight(0);
+	mDefaultLight->setAmb({ 0.25, 0.25, 0.25 });
+	mDefaultLight->setDiff({ 0.6, 0.6, 0.6 });
+	mDefaultLight->setSpec({ 0.0, 0.2, 0.0 });
+	gLights.push_back(mDefaultLight);
 }
 
 Scene::~Scene()
 {
 	destroy();
 	resetGL();
-}
-
-void Scene::toggleLight(std::string id)
-{
-	// TODO: Esto está bien??
-
-	int i = 0;
-	while(i < gLights.size() && gLights[i]->getID() != id)
-		i++;
-	
-	if (i < gLights.size()) {
-		gLights[i]->setEnabled(!gLights[i]->enabled());
-	}
 }
 
 void
@@ -74,7 +62,6 @@ Scene::load()
 		obj->load();
 
 	// Llamamos aqui a setGL para cambiar el color de fondo
-	// TODO: Preguntar si este es el sitio / la forma correcta.
 	setGL();
 }
 
@@ -82,7 +69,7 @@ void
 Scene::unload()
 {
 	for(Light* light : gLights)
-		light->unload(*Shader::get("simple_light"));
+		light->unload(*Shader::get("light"));
 
 	for (Abs_Entity* obj : gObjects)
 		obj->unload();
@@ -139,6 +126,11 @@ void Scene::update() {
 
 	for (Abs_Entity* el : gTranslucidObjects)
 		el->update();
+}
+
+void Scene::handleKey(unsigned int key)
+{
+	if (key == 'r') mDefaultLight->setEnabled(!mDefaultLight->enabled());
 }
 
 Texture* Scene::getTexture(const std::string& name, GLubyte alpha)
