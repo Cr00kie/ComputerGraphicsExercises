@@ -78,6 +78,11 @@ Scene::unload()
 		obj->unload();
 }
 
+void Scene::addLight(Light* light)
+{
+	gLights.push_back(light);
+}
+
 void
 Scene::setGL()
 {

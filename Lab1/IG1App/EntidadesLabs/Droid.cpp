@@ -3,16 +3,18 @@
 #include "glm/gtc/matrix_transform.hpp"
 #include "Cone.h"
 #include "Disk.h"
+#include "../Scene.h"
 #include "../Light.h"
 
-Droid::Droid(GLdouble bodyRadius)
+Droid::Droid(Scene* parentScene, GLdouble bodyRadius)
 {
 	GLdouble headHeight = bodyRadius * 0.5f;
 	GLdouble eyeRadius = headHeight * 0.25f;
 	GLdouble eyeLength = headHeight;
 
 	// Cuerpo
-	addEntity(new SphereWithTexture(bodyRadius, 20, 20, "container.jpg"));
+	droidSphere = new SphereWithTexture(bodyRadius, 20, 20, "container.jpg");
+	addEntity(droidSphere);
 
 	// Cabeza
 	Cone* head = new Cone(headHeight, bodyRadius, headHeight, 20, 20, {1.0, 1.0, 0.0, 1.0});
@@ -46,10 +48,17 @@ Droid::Droid(GLdouble bodyRadius)
 	spotLight->setAmb({ 0.25, 0.25, 0.25 });
 	spotLight->setDiff({ 0.6, 0.6, 0.6 });
 	spotLight->setSpec({ 0.0, 0.2, 0.0 });
+
+	parentScene->addLight(spotLight);
 }
 
 void Droid::render(const glm::mat4& modelViewMat) const
 {
 	CompoundEntity::render(modelViewMat);
 	spotLight->upload(*Shader::get("light"), modelViewMat * mModelMat);
+}
+
+void Droid::rotateSphere(float amount)
+{
+	droidSphere->setModelMat(glm::rotate(glm::mat4(1.f), amount, glm::vec3(1.f, 0.f, 0.f)) * droidSphere->modelMat());
 }

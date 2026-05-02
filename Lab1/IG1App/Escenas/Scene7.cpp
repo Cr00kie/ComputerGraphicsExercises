@@ -21,6 +21,6 @@ void Scene7::init()
 	/*SphereWithTexture* sph = new SphereWithTexture(50, 12, 12, "container.jpg");
 	gObjects.push_back(sph);*/
 
-	Droid* droid = new Droid(50);
+	Droid* droid = new Droid(this, 50);
 	gObjects.push_back(droid);
 }

@@ -39,6 +39,8 @@ public:
 	void load();
 	void unload();
 
+	void addLight(Light* light);
+
 protected:
 	void destroy();
 	virtual void setGL();

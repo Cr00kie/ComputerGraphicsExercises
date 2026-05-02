@@ -14,7 +14,7 @@ void Scene8::init()
 
 	// Create droid
 	GLdouble droidRadius = planetRadius / 10;
-	mDroid = new Droid(droidRadius);
+	mDroid = new Droid(this, droidRadius);
 
 	// Compound entity for easier rotations
 	mOrbitNode = new CompoundEntity;
@@ -84,6 +84,8 @@ void Scene8::orbit()
 	// Aplicamos una rotacion en el sentido en el que mira el robot
 	glm::mat4 rotation = glm::rotate(glm::mat4(1), glm::radians(5.f), lookDir);
 	mOrbitNode->setModelMat(rotation * mOrbitNode->modelMat());
+
+	mDroid->rotateSphere(2.f);
 }
 
 void Scene8::setGL()
