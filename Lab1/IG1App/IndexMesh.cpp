@@ -1,4 +1,4 @@
-#include "IndexMesh.h"
+Ôªø#include "IndexMesh.h"
 
 using namespace std;
 using namespace glm;
@@ -20,9 +20,9 @@ IndexMesh* IndexMesh::generateByRevolution(const std::vector<glm::vec2>& profile
 	mesh->vVertices.reserve(nSamples * tamPerfil);
 	mesh->vTexCoords.reserve(mesh->mNumVertices);
 
-	// Genera los vÈrtices de las muestras
+	// Genera los v√©rtices de las muestras
 	GLdouble theta1 = angleMax / nSamples;
-	for (int i = 0; i <= nSamples; ++i) { // muestra i-Èsima
+	for (int i = 0; i <= nSamples; ++i) { // muestra i-√©sima
 
 		GLdouble c = cos(i * theta1), s = sin(i * theta1);
 		
@@ -32,7 +32,7 @@ IndexMesh* IndexMesh::generateByRevolution(const std::vector<glm::vec2>& profile
 			// Creamos los vertices de cada anillo
 			mesh->vVertices.emplace_back(profile[j].x * c, profile[j].y, -profile[j].x * s);
 
-			// AÒadimos las coordenadas de textura
+			// A√±adimos las coordenadas de textura
 			mesh->vTexCoords.emplace_back(float(i) / nSamples, 1 - (float(j) / tamPerfil));
 		}
 	}
@@ -40,23 +40,23 @@ IndexMesh* IndexMesh::generateByRevolution(const std::vector<glm::vec2>& profile
 	int i = 0;
 	for (; i < nSamples - 1; ++i) // caras i a i + 1
 		for (int j = 0; j < tamPerfil - 1; ++j) { // una cara
-			if (profile[j].x != 0.0) // tri·ngulo inferior
+			if (profile[j].x != 0.0) // tri√°ngulo inferior
 				for (auto [s, t] : { pair{i, j}, {i + 1, j}, {i, j + 1} })
 					mesh->vIndexes.push_back(s * tamPerfil + t);
-			if (profile[j + 1].x != 0.0) // tri·ngulo superior
+			if (profile[j + 1].x != 0.0) // tri√°ngulo superior
 				for (auto [s, t] : { pair{i, j + 1}, {i + 1, j}, {i + 1, j + 1} })
 					mesh->vIndexes.push_back(s * tamPerfil + t);
 		}
 
 	// Creamos la ultima cara uniendo con la primera o no 
-	// (solo si la intenciÛn es dar exactamente una vuelta, asumimos que la intenciÛn es dar una vuelta si el ·ngulo m·ximo es cercano a 2*pi)
+	// (solo si la intenci√≥n es dar exactamente una vuelta, asumimos que la intenci√≥n es dar una vuelta si el √°ngulo m√°ximo es cercano a 2*pi)
 	int lastSampleIndex = angleMax - std::numbers::pi * 2 < 0.0001 ? 0 : i+1;
 	for (int j = 0; j < tamPerfil - 1; ++j)
 	{ // una cara
-		if (profile[j].x != 0.0) // tri·ngulo inferior
+		if (profile[j].x != 0.0) // tri√°ngulo inferior
 			for (auto [s, t] : { pair{i, j}, {lastSampleIndex, j}, {i, j + 1}  })
 				mesh->vIndexes.push_back(s * tamPerfil + t);
-		if (profile[j + 1].x != 0.0) // tri·ngulo superior
+		if (profile[j + 1].x != 0.0) // tri√°ngulo superior
 			for (auto [s, t] : { pair{i, j + 1}, {lastSampleIndex, j}, {lastSampleIndex, j + 1} })
 				mesh->vIndexes.push_back(s * tamPerfil + t);
 	}
@@ -196,10 +196,10 @@ void IndexMesh::draw() const
 	glDrawElements(
 		mPrimitive,
 		// primitiva (GL_TRIANGLES, etc.)
-		vIndexes.size(), // n˙mero de Ìndices
-		GL_UNSIGNED_INT, // tipo de los Ìndices
+		vIndexes.size(), // n√∫mero de √≠ndices
+		GL_UNSIGNED_INT, // tipo de los √≠ndices
 		nullptr
-		// offset en el VBO de Ìndices
+		// offset en el VBO de √≠ndices
 	);
 }
 
@@ -227,10 +227,10 @@ void IndexMesh::unload()
 
 void IndexMesh::buildNormalVectors()
 {
-	// Construir el vector de normales del mismo tamaÒo que el de vÈrtices e Inicializar las normales a 0
+	// Construir el vector de normales del mismo tama√±o que el de v√©rtices e Inicializar las normales a 0
 	vNormals.resize(vVertices.size(), glm::vec3(0.f));
 
-	// Recorrer los tri·ngulos
+	// Recorrer los tri√°ngulos
 	for (int k = 0; k < vIndexes.size(); k += 3){
 		vec3 normal = normalize(cross(vVertices[vIndexes[k+1]]  - vVertices[vIndexes[k]], vVertices[vIndexes[k+2]] - vVertices[vIndexes[k]]));
 

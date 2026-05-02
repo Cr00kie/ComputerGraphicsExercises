@@ -1,4 +1,4 @@
-#include "Mesh.h"
+﻿#include "Mesh.h"
 
 using namespace std;
 using namespace glm;
@@ -153,7 +153,7 @@ Mesh::createRGBAxes(GLdouble l)
 	return mesh;
 }
 
-// crea un pol�gono regular 
+// crea un polígono regular 
 Mesh* Mesh::generateRegularPolygon(GLuint num, GLdouble r)
 {
 	Mesh* mesh = new Mesh();

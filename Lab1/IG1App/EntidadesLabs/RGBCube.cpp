@@ -1,4 +1,4 @@
-#include "RGBCube.h"
+ï»¿#include "RGBCube.h"
 
 #include "glm/gtc/matrix_transform.hpp"
 #include <iostream>
@@ -16,9 +16,9 @@ void RGBCube::render(const glm::mat4& modelViewMat) const
 		mShader->use();
 		upload(aMat);
 
-		glEnable(GL_CULL_FACE); // Activa el renderizado solo para las caras visibles para la cámara
+		glEnable(GL_CULL_FACE); // Activa el renderizado solo para las caras visibles para la cÃ¡mara
 
-		glCullFace(GL_BACK); // También se puede hacer: glFrontFace(GL_CCW); 
+		glCullFace(GL_BACK); // TambiÃ©n se puede hacer: glFrontFace(GL_CCW); 
 		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 		mMesh->render();
 

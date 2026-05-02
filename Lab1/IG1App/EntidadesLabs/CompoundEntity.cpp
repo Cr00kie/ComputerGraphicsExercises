@@ -1,4 +1,4 @@
-#include "CompoundEntity.h"
+﻿#include "CompoundEntity.h"
 
 CompoundEntity::~CompoundEntity()
 {
@@ -10,7 +10,7 @@ CompoundEntity::~CompoundEntity()
 
 void CompoundEntity::render(const glm::mat4& modelViewMat) const
 {
-	// Aplicamos la transformaci�n del objeto padre a los objetos hijos
+	// Aplicamos la transformación del objeto padre a los objetos hijos
 	glm::mat4 aMat = modelViewMat * mModelMat;
 	for (Abs_Entity* el : gObjects) el->render(aMat);
 }

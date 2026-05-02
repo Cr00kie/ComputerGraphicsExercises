@@ -1,9 +1,9 @@
-#include "Torus.h"
+Ôªø#include "Torus.h"
 #include "../IndexMesh.h"
 #include "glm/gtc/type_ptr.hpp"
 
 Torus::Torus(GLdouble R, GLdouble r, GLuint nPoints, GLuint nSamples, glm::vec4 col)
-	: ColorMaterialEntity(col) // Por el enunciado supongo que siempre ser· verde?
+	: ColorMaterialEntity(col) // Por el enunciado supongo que siempre ser√° verde?
 {
 	std::vector<glm::vec2> vProfile(nPoints+1);
 
@@ -16,7 +16,7 @@ Torus::Torus(GLdouble R, GLdouble r, GLuint nPoints, GLuint nSamples, glm::vec4 
 		vProfile[i] = { R + r * glm::cos(angle), r * glm::sin(angle) };
 	}
 
-	// Cerramos el cÌrculo
+	// Cerramos el c√≠rculo
 	vProfile[nPoints] = vProfile[0];
 
 	mMesh = IndexMesh::generateByRevolution(vProfile, nSamples);

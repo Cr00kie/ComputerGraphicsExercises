@@ -1,4 +1,4 @@
-#include "Cube.h"
+ï»¿#include "Cube.h"
 
 Cube::Cube(GLdouble length, glm::vec4 col)
 	: SingleColorEntity(col)
@@ -13,13 +13,13 @@ void Cube::render(const glm::mat4& modelViewMat) const
 		mShader->use();
 		upload(aMat);
 
-		glEnable(GL_CULL_FACE); // Activa el renderizado solo para las caras visibles para la cámara
+		glEnable(GL_CULL_FACE); // Activa el renderizado solo para las caras visibles para la cÃ¡mara
 
-		glCullFace(GL_FRONT); // También se puede hacer: glFrontFace(GL_CCW); 
+		glCullFace(GL_FRONT); // TambiÃ©n se puede hacer: glFrontFace(GL_CCW); 
 		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 		mMesh->render();
 
-		glCullFace(GL_BACK); // También se puede hacer: glFrontFace(GL_CW); 
+		glCullFace(GL_BACK); // TambiÃ©n se puede hacer: glFrontFace(GL_CW); 
 		glPolygonMode(GL_FRONT_AND_BACK, GL_POINT);
 		mMesh->render();
 

@@ -1,9 +1,9 @@
-#include "Disk.h"
+﻿#include "Disk.h"
 #include "../IndexMesh.h"
 #include "glm/gtc/type_ptr.hpp"
 
 Disk::Disk(GLdouble R, GLdouble r, GLuint nRings, GLuint nSamples, glm::vec4 col)
-	: ColorMaterialEntity(col) // Por el enunciado supongo que siempre ser� verde?
+	: ColorMaterialEntity(col) // Por el enunciado supongo que siempre será verde?
 {
 	std::vector<glm::vec2> vProfile(nRings+1);
 

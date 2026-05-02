@@ -1,4 +1,4 @@
-#include "Scene.h"
+﻿#include "Scene.h"
 
 #include "Light.h"
 
@@ -151,7 +151,7 @@ Texture* Scene::getTexture(const std::string& name, GLubyte alpha)
 			// Load the texture from file (under the texture root)
 			texture->load("../assets/images/" + name, alpha);
 		}
-		// Si no se encuentra capturamos el error, pero no paramos, se quedar� una textura negra
+		// Si no se encuentra capturamos el error, pero no paramos, se quedará una textura negra
 		catch(std::logic_error){}
 
 		it = gTextures.insert({ name, std::move(texture) }).first;

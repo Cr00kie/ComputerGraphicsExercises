@@ -1,4 +1,4 @@
-#include "Shader.h"
+ï»¿#include "Shader.h"
 #include "Camera.h"
 
 #include <glm/gtc/matrix_transform.hpp>
@@ -216,7 +216,7 @@ void Camera::changePrj()
 void
 Camera::upload() const
 {
-	// Ponemos dirección de luz en el shader a las coordenadas homogéneas: -1, -1.5, -1.25,0 (world coords)
+	// Ponemos direcciÃ³n de luz en el shader a las coordenadas homogÃ©neas: -1, -1.5, -1.25,0 (world coords)
 /*	glm::vec4 lightDir = glm::vec4(-1, -1.5, -1.25, 0);
 
 	Shader* shader = Shader::get("simple_light");

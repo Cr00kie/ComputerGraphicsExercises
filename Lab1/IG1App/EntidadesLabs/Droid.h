@@ -1,4 +1,4 @@
-#ifndef _H_Droid_H_
+Ôªø#ifndef _H_Droid_H_
 #define _H_Droid_H_
 #include "CompoundEntity.h"
 
@@ -9,8 +9,8 @@ class Scene;
 class Droid : public CompoundEntity
 {
 public:
-	// Recibimos la escena para aÒadir la luz del droide a la escena. Si no, la luz no se desactivar· al cambiar de escena.
-	// No lo hemos hecho con m·s entidades por si acaso est· mal.
+	// Recibimos la escena para a√±adir la luz del droide a la escena. Si no, la luz no se desactivar√° al cambiar de escena.
+	// No lo hemos hecho con m√°s entidades por si acaso est√° mal.
 	Droid(Scene* parentScene, GLdouble bodyRadius);
 	void render(const glm::mat4& modelViewMat) const override;
 	void rotateSphere(float amount);
