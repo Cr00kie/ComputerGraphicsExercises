@@ -16,31 +16,34 @@ Droid::Droid(Scene* parentScene, GLdouble bodyRadius)
 	droidSphere = new SphereWithTexture(bodyRadius, 20, 20, "container.jpg");
 	addEntity(droidSphere);
 
+	CompoundEntity* head = new CompoundEntity();
 	// Cabeza
-	Cone* head = new Cone(headHeight, bodyRadius, headHeight, 20, 20, {1.0, 1.0, 0.0, 1.0});
-	head->setModelMat(glm::translate(glm::mat4(1), glm::vec3(0, bodyRadius + headHeight * 0.5f, 0)));
-	addEntity(head);
+	Cone* cone = new Cone(headHeight, bodyRadius, headHeight, 20, 20, {1.0, 1.0, 0.0, 1.0});
+	cone->setModelMat(glm::translate(glm::mat4(1), glm::vec3(0, bodyRadius + headHeight * 0.5f, 0)));
+	head->addEntity(cone);
 
 	// Ojos
 	Cone* leftEye = new Cone(eyeLength, eyeRadius, eyeRadius, 10, 10, {0.0, 1.0, 0.0, 1.0});
 	glm::mat4 eyeRotation = glm::rotate(glm::mat4(1), glm::radians(90.f), glm::vec3(1, 0, 0));
 	glm::mat4 leftEyeTranslation = glm::translate(glm::mat4(1), glm::vec3(eyeRadius, bodyRadius + headHeight / 2, bodyRadius));
 	leftEye->setModelMat(leftEyeTranslation * eyeRotation);
-	addEntity(leftEye);
+	head->addEntity(leftEye);
 
 	Cone* rightEye = new Cone(eyeLength, eyeRadius, eyeRadius, 10, 10, { 0.0, 1.0, 0.0, 1.0 });
 	glm::mat4 rightEyeTranslation = glm::translate(glm::mat4(1), glm::vec3(-eyeRadius, bodyRadius + headHeight / 2, bodyRadius));
 	rightEye->setModelMat(rightEyeTranslation * eyeRotation);
-	addEntity(rightEye);
+	head->addEntity(rightEye);
 
 	// Tapas
 	Disk* tapaInferior = new Disk(0, bodyRadius, 1, 20, { 1.0, 1.0, 0.0, 1.0 });
 	tapaInferior->setModelMat(glm::translate(modelMat(), glm::vec3(0, bodyRadius, 0))* glm::rotate(glm::mat4(1), glm::radians(180.f), glm::vec3(0, 0, 1)));
-	addEntity(tapaInferior);
+	head->addEntity(tapaInferior);
 
 	Disk* tapaSuperior = new Disk(0, headHeight, 1, 20, { 1.0, 1.0, 0.0, 1.0 });
 	tapaSuperior->setModelMat(glm::translate(glm::mat4(1), glm::vec3(0, bodyRadius+headHeight, 0)));
-	addEntity(tapaSuperior);
+	head->addEntity(tapaSuperior);
+
+	addEntity(head);
 
 	// Luces
 	spotLight = new SpotLight({0, 0, 0}, 1);

@@ -23,6 +23,14 @@ Camera::Camera(Viewport* vp)
 void
 Camera::uploadVM() const
 {
+	// Ponemos dirección de luz en el shader a las coordenadas homogéneas: -1, -1.5, -1.25,0 (world coords)
+	/*	glm::vec4 lightDir = glm::vec4(-1, -1.5, -1.25, 0);
+
+	Shader* shader = Shader::get("simple_light");
+	shader->use();
+	shader->setUniform("lightDir", glm::normalize(mViewMat * lightDir));
+	*/
+
 	Shader::setUniform4All("modelView", mViewMat);
 }
 
@@ -216,13 +224,6 @@ void Camera::changePrj()
 void
 Camera::upload() const
 {
-	// Ponemos dirección de luz en el shader a las coordenadas homogéneas: -1, -1.5, -1.25,0 (world coords)
-/*	glm::vec4 lightDir = glm::vec4(-1, -1.5, -1.25, 0);
-
-	Shader* shader = Shader::get("simple_light");
-	shader->use();
-	shader->setUniform("lightDir", glm::normalize(mViewMat * lightDir));
-	*/
 	uploadVM();
 	uploadPM();
 }
