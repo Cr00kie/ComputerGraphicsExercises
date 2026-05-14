@@ -14,6 +14,7 @@ public:
 	Droid(Scene* parentScene, GLdouble bodyRadius);
 	void render(const glm::mat4& modelViewMat) const override;
 	void rotateSphere(float amount);
+	void toggleLight();
 
 private:
 	SpotLight* spotLight;

@@ -293,7 +293,7 @@ IG1App::key(unsigned int key)
 			need_redisplay = true;
 			break;
 		case 'N': // Toggle normal debug info
-			ColorMaterialEntity::toggleShowNormals();
+			EntityWithMaterial::toggleShowNormals();
 			need_redisplay = true;
 			break;
 		default:
@@ -305,8 +305,7 @@ IG1App::key(unsigned int key)
 			// Pass key press to scenes
 			else 
 			{
-				mScenes[mCurrentScene]->handleKey(key);
-				need_redisplay = true;
+				need_redisplay = mScenes[mCurrentScene]->handleKey(key);
 			}
 
 			break;

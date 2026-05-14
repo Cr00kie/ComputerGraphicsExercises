@@ -31,7 +31,7 @@ public:
 	void uploadLights(const Camera& cam) const;
 
 	virtual void update();
-	virtual void handleKey(unsigned int key);
+	virtual bool handleKey(unsigned int key);
 
 	static Texture* getTexture(const std::string& name, GLubyte alpha = 255);
 

@@ -133,9 +133,15 @@ void Scene::update() {
 		el->update();
 }
 
-void Scene::handleKey(unsigned int key)
+bool Scene::handleKey(unsigned int key)
 {
-	if (key == 'r') mDefaultLight->setEnabled(!mDefaultLight->enabled());
+	if (key == 'r')
+	{
+		mDefaultLight->setEnabled(!mDefaultLight->enabled());
+		return true;
+	}
+
+	return false;
 }
 
 Texture* Scene::getTexture(const std::string& name, GLubyte alpha)

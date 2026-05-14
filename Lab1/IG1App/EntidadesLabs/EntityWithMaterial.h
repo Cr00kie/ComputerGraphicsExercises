@@ -9,9 +9,13 @@ public:
 	EntityWithMaterial();
 	void setMaterial(const Material& m) { mMaterial = m; };
 	void render(const glm::mat4& modelViewMat) const override;
+	static void toggleShowNormals();
 
 protected:
 	Material mMaterial;
+
+private:
+	static bool sShowNormals;
 };
 
 #endif

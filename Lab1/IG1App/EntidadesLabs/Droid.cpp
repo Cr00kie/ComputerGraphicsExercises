@@ -48,10 +48,6 @@ Droid::Droid(Scene* parentScene, GLdouble bodyRadius)
 	// Luces
 	spotLight = new SpotLight({0, 0, 0}, 1);
 
-	spotLight->setAmb({ 0.25, 0.25, 0.25 });
-	spotLight->setDiff({ 0.6, 0.6, 0.6 });
-	spotLight->setSpec({ 0.0, 0.2, 0.0 });
-
 	parentScene->addLight(spotLight);
 }
 
@@ -64,4 +60,9 @@ void Droid::render(const glm::mat4& modelViewMat) const
 void Droid::rotateSphere(float amount)
 {
 	droidSphere->setModelMat(glm::rotate(glm::mat4(1.f), amount, glm::vec3(1.f, 0.f, 0.f)) * droidSphere->modelMat());
+}
+
+void Droid::toggleLight()
+{
+	spotLight->setEnabled(!spotLight->enabled());
 }

@@ -13,7 +13,7 @@ public:
 	Scene8() = default;
 	void init() override;
 
-	void handleKey(unsigned int key) override;
+	bool handleKey(unsigned int key) override;
 
 	void rotate();
 	void orbit();
